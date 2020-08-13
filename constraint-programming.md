@@ -32,16 +32,17 @@
 
 - **Construction Heuristic** 阶段可以用的算法有First fit, Allocate entity from the queue, Allocate from the pool等。
 - **Local Search** 阶段可用到的算法有Tabu search, Great Duge等。
+<br><br>
 
 ### Example
 **Vehicle Routing Problem (VRP)**<br>
-*硬约束/Hard Constraint*: 不可超过运输工具的负载, 必须在与客户约定时间之前到达<br>
-*软约束/Soft Constraint*: 最小化总路程（油耗）<br>
+*硬约束/Hard Constraint*: 不可超过运输工具的负载, 必须在与客户约定时间之前到达\
+*软约束/Soft Constraint*: 最小化总路程 (油耗)
 
 **VRP Class Diagram:**<br>
 ![](img/vrp-classdiagram.png)
 
-**VRP输入**: 用户ID，用户位置，需要的货量，需要货到达的时间，车的承载量。
+**VRP输入**: 用户ID，用户位置，需要的货量，需要货到达的时间，车的承载量。<br><br>
 
 **计算分数举例**:
 ```Java
@@ -50,6 +51,7 @@ constraint.from(Customer.class).penalizeLong(
                 HardSoftLongScore.ONE_HARD,
                 (vehicle, demand) -> demand - vehicle.getCapacity());
 ```
+<br><br>
 
 **VRP运行结果**:
 ```
@@ -104,6 +106,7 @@ INFO  Local Search phase (1) ended: time spent (1126), best score (0hard/-224289
 INFO  Solving ended:                time spent (1126), best score (0hard/-2242890soft),
                                     score calculation speed (7250/sec), phase total (2).
 ```
+<br><br><br>
 
 ## 实际运用
 **Class Diagram:**<br>
@@ -111,6 +114,7 @@ INFO  Solving ended:                time spent (1126), best score (0hard/-224289
 <br><br>
 
 代码尚在调试中，我们首先从简单的模型入手，例如一个base，一个vessel，一个工种，此模型已基本完成设计。然后通过继承abstract classes和interfaces拓展工种类型等其他因素, 从而实现在不影响核心算法的情况下使约束条件可变。
+<br><br>
 
 ### 预期结果
 - 在程序搭建完成之后, 任何有计算机基础的人可以根据提供的文档添加所需要添加的变量种类。
