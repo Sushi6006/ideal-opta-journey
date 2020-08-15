@@ -1,4 +1,5 @@
 
+/*from optaplanner example vehiclerouting Location class*/
 
 public abstract class Location{
 
