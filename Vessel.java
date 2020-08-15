@@ -1,8 +1,8 @@
 
 
 public class Vessel{
-    protected int capacity;
 
+    protected int capacity;
 
     public Vessel() {
     }
