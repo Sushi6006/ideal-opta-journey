@@ -11,10 +11,10 @@ public class Turbine{
     protected Customer nextCustomer;
     protected Vehicle vehicle;
 
-    public Customer() {
+    public Turbine() {
     }
 
-    public Customer(long id, Location location, int demand) {
+    public Turbine(long id, Location location, int demand) {
         super(id);
         this.location = location;
         this.demand = demand;
