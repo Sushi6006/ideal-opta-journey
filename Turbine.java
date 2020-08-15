@@ -1,21 +1,22 @@
-
-import Location
+import Location;
 
 @PlanningEntity
-public class Turbine{
+public class Turbine {
+
+    protected long id;
     protected Location location;
     protected int demand;
 
-
     // Shadow variables
-    protected Customer nextCustomer;
-    protected Vehicle vehicle;
+    protected Turbine nextTurbine;
+    protected Vessel vessel;
 
     public Turbine() {
+
     }
 
     public Turbine(long id, Location location, int demand) {
-        super(id);
+        this.id = id;
         this.location = location;
         this.demand = demand;
     }
