@@ -1,0 +1,6 @@
+
+
+@PlanningEntity
+public class Turbine{
+
+}
