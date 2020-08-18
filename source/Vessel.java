@@ -1,4 +1,4 @@
-package windfarm.domain;
+package windfarm;
 
 public class Vessel implements Standstill {
 

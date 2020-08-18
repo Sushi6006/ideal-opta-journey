@@ -1,5 +1,5 @@
-package windfarm.domain;
-import Location;
+package windfarm;
+import windfarm.Location;
 
 @PlanningEntity
 public class Turbine implements Standstill {

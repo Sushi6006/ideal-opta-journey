@@ -1,9 +1,19 @@
-package windfarm.domain;
+package windfarm;
+
+import windfarm.Base;
+import windfarm.Vessel;
+import windfarm.Turbine;
+import windfarm.Route;
+import windfarm.Standstill;
+import windfarm.ScoreCalculator;
 
 import java.io.BufferedReader;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.stream.*;
 import java.lang.Integer;
+import java.lang.reflect.Array;
 
 
 public class MaintenanceRouting {
@@ -17,9 +27,11 @@ public class MaintenanceRouting {
         // import data
 
         // base
+        String row;
         BufferedReader csvReader = new BufferedReader(new FileReader("/data/base.csv"));
         while ((row = csvReader.readLine()) != null) {
-            Integer[] data = row.split(",").stream().mapToInt(Integer::parseInt).toArray();
+            int[] data = Arrays.asList(row.split(",")).stream().mapToInt(Integer::parseInt).toArray();
+            
             this.baseList.add(new Base(data[0], new Location(data[1], data[2])));
         }
         csvReader.close();
@@ -27,7 +39,7 @@ public class MaintenanceRouting {
         // vessels
         csvReader = new BufferedReader(new FileReader("/data/vessel.csv"));
         while ((row = csvReader.readLine()) != null) {
-            Integer[] data = row.split(",").stream().mapToInt(Integer::parseInt).toArray();
+            int[] data = Arrays.asList(row.split(",")).stream().mapToInt(Integer::parseInt).toArray();
             this.vesselList.add(new Vessel(data));
         }
         csvReader.close();
@@ -35,7 +47,7 @@ public class MaintenanceRouting {
         // turbines
         csvReader = new BufferedReader(new FileReader("/data/turbine.csv"));
         while ((row = csvReader.readLine()) != null) {
-            Integer[] data = row.split(",").stream().mapToInt(Integer::parseInt).toArray();
+            int[] data = Arrays.asList(row.split(",")).stream().mapToInt(Integer::parseInt).toArray();
             this.turbineList.add(new Turbine(data));
         }
         csvReader.close();

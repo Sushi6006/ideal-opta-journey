@@ -1,11 +1,9 @@
-package windfarm.domain;
+package windfarm;
 
 import java.util.List;
 
 @PlanningSolution
 public class Route {
-
-    int id;
 
     // planning entity
     private List<Turbine> turbineList;
@@ -19,8 +17,7 @@ public class Route {
     public Route() {
     }
 
-    public Route(int id, List<Vessel> vesselList, List<Turbine> turbineList) {
-        this.id = id;
+    public Route(List<Vessel> vesselList, List<Turbine> turbineList) {
         this.vesselList = vesselList;
         this.turbineList = turbineList;
     }
