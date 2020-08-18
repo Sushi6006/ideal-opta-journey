@@ -1,15 +1,16 @@
+package windfarm.domain;
+import Location;
 
-import Location
+public class Base {
 
-public class Base{
-
+    private long id;
     protected Location location;
 
     public Base() {
     }
 
-    public Base(long id, Location location, int demand) {
-        super(id);
+    public Base(long id, Location location) {
+        this.id = id;
         this.location = location;
     }
 

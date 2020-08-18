@@ -1,7 +1,7 @@
 
 /*from optaplanner example vehiclerouting Location class*/
 
-public abstract class Location{
+public abstract class Location {
 
     protected String name = null;
     protected double latitude;
@@ -10,8 +10,7 @@ public abstract class Location{
     public Location() {
     }
 
-    public Location(long id, double latitude, double longitude) {
-        super(id);
+    public Location(double latitude, double longitude) {
         this.latitude = latitude;
         this.longitude = longitude;
     }

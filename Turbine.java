@@ -1,7 +1,8 @@
+package windfarm.domain;
 import Location;
 
 @PlanningEntity
-public class Turbine {
+public class Turbine implements Standstill {
 
     protected long id;
     protected Location location;
