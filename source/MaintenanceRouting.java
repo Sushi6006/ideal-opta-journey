@@ -15,6 +15,9 @@ import java.util.stream.*;
 import java.lang.Integer;
 import java.lang.reflect.Array;
 
+import org.optaplanner.core.api.solver.Solver;
+import org.optaplanner.core.api.solver.SolverFactory;
+
 
 public class MaintenanceRouting {
 
