@@ -6,3 +6,18 @@
   - Distance
 - Hard Score
   - Capacity
+
+## Input
+- Base
+  - id
+  - Location
+- Vessel
+  - id
+  - capacity
+  - base
+- Turbine
+  - id
+  - location
+  - demand
+  - nextTurbine
+  - vessel
