@@ -4,7 +4,7 @@ import Location;
 @PlanningEntity
 public class Turbine implements Standstill {
 
-    protected long id;
+    protected int id;
     protected Location location;
     protected int demand;
 
@@ -16,10 +16,16 @@ public class Turbine implements Standstill {
 
     }
 
-    public Turbine(long id, Location location, int demand) {
+    public Turbine(int id, Location location, int demand) {
         this.id = id;
         this.location = location;
         this.demand = demand;
+    }
+
+    public Turbine(Integer[] data) {
+        this.id = data[0];
+        this.location = new Location(data[1], data[2]);
+        this.demand = data[3];
     }
 
     public Location getLocation() {

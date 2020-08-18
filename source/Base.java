@@ -3,13 +3,13 @@ import Location;
 
 public class Base {
 
-    private long id;
+    private int id;
     protected Location location;
 
     public Base() {
     }
 
-    public Base(long id, Location location) {
+    public Base(int id, Location location) {
         this.id = id;
         this.location = location;
     }

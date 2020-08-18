@@ -2,7 +2,7 @@ package windfarm.domain;
 
 public class Vessel implements Standstill {
 
-    protected long id;
+    protected int id;
     protected int capacity;
     protected Base base;
 
@@ -11,10 +11,16 @@ public class Vessel implements Standstill {
     public Vessel() {
     }
 
-    public Vessel(long id, int capacity, Base base) {
+    public Vessel(int id, int capacity, Base base) {
         this.id = id;
         this.capacity = capacity;
         this.base = base;
+    }
+
+    public Vessel(Integer[] data) {
+        this.id = data[0];
+        this.capacity = data[1];
+        this.base = data[2];
     }
 
     public int getCapacity() {
