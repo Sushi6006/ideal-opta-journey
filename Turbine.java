@@ -37,4 +37,69 @@ public class Turbine implements Standstill {
     public void setDemand(int demand) {
         this.demand = demand;
     }
+
+    @PlanningVariable(valueRangeProviderRefs = { "vesselRange", "turbineRange" }, graphType = PlanningVariableGraphType.CHAINED)
+    public Standstill getPreviousStandstill() {
+        return previousStandstill;
+    }
+
+    public void setPreviousStandstill(Standstill previousStandstill) {
+        this.previousStandstill = previousStandstill;
+    }
+
+    @Override
+    public Turbine getNextTurbine() {
+        return nextTurbine;
+    }
+
+    @Override
+    public void setNextTurbine(Turbine nextTurbine) {
+        this.nextTurbine = nextTurbine;
+    }
+
+    @Override
+    public Vessel getVessel() {
+        return vessel;
+    }
+
+    public void setVessel(Vessel vessel) {
+        this.vessel = vessel;
+    }
+
+
+    /**
+     * @return a positive number, the distance multiplied by 1000 to avoid floating point arithmetic rounding errors
+     */
+    public long getDistanceFromPreviousStandstill() {
+        if (previousStandstill == null) {
+            throw new IllegalStateException("This method must not be called when the previousStandstill ("
+                    + previousStandstill + ") is not initialized yet.");
+        }
+        return getDistanceFrom(previousStandstill);
+    }
+
+    /**
+     * @param standstill never null
+     * @return a positive number, the distance multiplied by 1000 to avoid floating point arithmetic rounding errors
+     */
+    public long getDistanceFrom(Standstill standstill) {
+        return standstill.getLocation().getDistanceTo(location);
+    }
+
+    /**
+     * @param standstill never null
+     * @return a positive number, the distance multiplied by 1000 to avoid floating point arithmetic rounding errors
+     */
+    public long getDistanceTo(Standstill standstill) {
+        return location.getDistanceTo(standstill.getLocation());
+    }
+
+    @Override
+    public String toString() {
+        if (location.getName() == null) {
+            return super.toString();
+        }
+        return location.getName();
+    }
+    
 }

@@ -2,7 +2,7 @@ package windfarm.domain;
 
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.variable.InverseRelationShadowVariable;
-import org.optaplanner.examples.vehiclerouting.domain.location.Location;
+import windfarm.domain.Location;
 
 @PlanningEntity
 public interface Standstill {
