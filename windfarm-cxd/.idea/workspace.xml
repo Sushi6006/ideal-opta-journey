@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d395282-8b4b-4442-8b92-f87207a75846" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../windfarm-new/src/main/java/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/../windfarm-new/src/main/java/windfarm/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../windfarm-new/src/main/java/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/../windfarm-new/src/main/java/windfarm/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../windfarm-new/src/main/java/MaintenanceRouting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../windfarm-new/src/main/java/windfarm/MaintenanceRouting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../windfarm-new/src/main/java/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/../windfarm-new/src/main/java/windfarm/Part.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../windfarm-new/src/main/java/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/../windfarm-new/src/main/java/windfarm/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../windfarm-new/src/main/java/ScoreCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../windfarm-new/src/main/java/windfarm/ScoreCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../windfarm-new/src/main/java/Standstill.java" beforeDir="false" afterPath="$PROJECT_DIR$/../windfarm-new/src/main/java/windfarm/Standstill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../windfarm-new/src/main/java/Technician.java" beforeDir="false" afterPath="$PROJECT_DIR$/../windfarm-new/src/main/java/windfarm/Technician.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../windfarm-new/src/main/java/Turbine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../windfarm-new/src/main/java/windfarm/Turbine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../windfarm-new/src/main/java/Vessel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../windfarm-new/src/main/java/windfarm/Vessel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../windfarm-new/src/main/java/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../windfarm-new/src/main/java/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../windfarm-new/src/main/java/sources.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../windfarm-new/src/main/java/sources.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gJb81r6T8fTyPYT5smcw4oT0vg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="OptaplannerTest []" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d395282-8b4b-4442-8b92-f87207a75846" name="Default Changelist" comment="" />
+      <created>1597835480497</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597835480497</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597835677132">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="424" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1597835677132" />
+  </component>
+</project>

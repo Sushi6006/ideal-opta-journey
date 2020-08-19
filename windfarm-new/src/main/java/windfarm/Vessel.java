@@ -4,11 +4,11 @@ public class Vessel implements Standstill {
 
     protected int id;
     protected int capacity;
-    protected Base base;
+    protected int base;
 
     protected Turbine nextTurbine;
 
-    public Vessel() {
+    public Vessel(int[] data) {
     }
 
     public Vessel(int id, int capacity, Base base) {
@@ -17,7 +17,7 @@ public class Vessel implements Standstill {
         this.base = base;
     }
 
-    public Vessel(Integer[] data) {
+    public Vessel(int[] data) {
         this.id = data[0];
         this.capacity = data[1];
         this.base = data[2];
@@ -37,6 +37,16 @@ public class Vessel implements Standstill {
 
     public void setBase(Base base) {
         this.base = base;
+    }
+
+    @Override
+    public Location getLocation() {
+        return null;
+    }
+
+    @Override
+    public Vessel getVessel() {
+        return null;
     }
 
     @Override

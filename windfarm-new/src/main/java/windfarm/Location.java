@@ -1,5 +1,5 @@
-
-/*from optaplanner example vehiclerouting Location class*/
+package windfarm;
+/*from optaplanner example vehiclerouting windfarm.Location class*/
 
 public abstract class Location {
 

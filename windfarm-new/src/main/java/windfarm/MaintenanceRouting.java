@@ -5,9 +5,12 @@ import windfarm.Vessel;
 import windfarm.Turbine;
 import windfarm.Route;
 import windfarm.Standstill;
+import windfarm.Location;
 import windfarm.ScoreCalculator;
 
 import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
@@ -25,7 +28,11 @@ public class MaintenanceRouting {
     protected List<Vessel> vesselList;
     protected List<Turbine> turbineList;
 
-    public void main(String[] args) {
+    private Route createRoute() {
+        return new Route(this.vesselList, this.turbineList);
+    }
+
+    public void main(String[] args) throws IOException {
         
         // import data
 
@@ -34,7 +41,6 @@ public class MaintenanceRouting {
         BufferedReader csvReader = new BufferedReader(new FileReader("/data/base.csv"));
         while ((row = csvReader.readLine()) != null) {
             int[] data = Arrays.asList(row.split(",")).stream().mapToInt(Integer::parseInt).toArray();
-            
             this.baseList.add(new Base(data[0], new Location(data[1], data[2])));
         }
         csvReader.close();
@@ -60,19 +66,14 @@ public class MaintenanceRouting {
         Solver<Route> solver = solverFactory.buildSolver();
 
         // Load a problem with given data
-        Route unsolvedRoute = this.createRoute();
+        Route unsolvedRoute = createRoute();
 
         // Solve the problem
         Route solvedRoute = solver.solve(unsolvedRoute);
 
         // Display the result
-        System.out.println("\nSolved cloudBalance with given data:\n"
-                + toDisplayString(solvedRoute));
+        System.out.println("\nSolved cloudBalance with given data:\n" + toDisplayString(solvedRoute));
 
-    }
-
-    private Route creatRoute() {
-        return new Route(this.vesselList, this.turbineList);
     }
 
 }

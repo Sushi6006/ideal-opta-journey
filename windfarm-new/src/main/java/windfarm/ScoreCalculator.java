@@ -1,4 +1,11 @@
-package windfarm.domain;
+package windfarm;
+
+import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
+import org.optaplanner.core.impl.score.director.easy.EasyScoreCalculator;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class ScoreCalculator implements EasyScoreCalculator<Route> {
 

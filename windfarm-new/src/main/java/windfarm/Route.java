@@ -1,5 +1,10 @@
 package windfarm;
 
+import com.thoughtworks.xstream.annotations.XStreamConverter;
+import org.optaplanner.core.api.domain.solution.PlanningScore;
+import org.optaplanner.core.api.domain.solution.PlanningSolution;
+import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
+
 import java.util.List;
 
 @PlanningSolution
@@ -10,7 +15,7 @@ public class Route {
     // planning variable
     private List<Vessel> vesselList;
 
-    @XStreamConverter(HardSoftScoreXStreamConverter.class)
+    // @XStreamConverter(HardSoftScoreXStreamConverter.class)
     private HardSoftScore score;
 
 

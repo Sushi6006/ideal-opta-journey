@@ -5,7 +5,7 @@
 ./Vessel.java
 ./ScoreCalculator.java
 ./Turbine.java
-./Location.java
+./windfarm.Location.java
 ./Technician.java
 ./Standstill.java
 ./optaplanner-core/src/test/resources/org/optaplanner/core/impl/score/director/drools/testgen/TestGenWriterOutput.java

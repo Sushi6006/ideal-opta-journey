@@ -1,4 +1,5 @@
 package windfarm;
+import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import windfarm.Location;
 
 @PlanningEntity
@@ -12,7 +13,7 @@ public class Turbine implements Standstill {
     protected Turbine nextTurbine;
     protected Vessel vessel;
 
-    public Turbine() {
+    public Turbine(int[] data) {
 
     }
 
