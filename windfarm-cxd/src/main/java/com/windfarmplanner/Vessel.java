@@ -85,16 +85,16 @@ public class Vessel extends AbstractPersistable implements Standstill {
         return depot.getLocation();
     }
 
-    public long getDistanceTo(Standstill standstill) {
+    public double getDistanceTo(Standstill standstill) {
         return base.getDistanceTo(standstill);
     }
 
-    @Override
-    public String toString() {
-        Location location = getLocation();
-        if (location.getName() == null) {
-            return super.toString();
-        }
-        return location.getName() + "/" + super.toString();
-    }
+//    @Override
+//    public String toString() {
+//        Location location = getLocation();
+//        if (location.getName() == null) {
+//            return super.toString();
+//        }
+//        return location.getName() + "/" + super.toString();
+//    }
 }

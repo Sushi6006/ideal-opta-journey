@@ -30,16 +30,16 @@ public class Depot extends AbstractPersistable {
      * @param standstill never null
      * @return a positive number, the distance multiplied by 1000 to avoid floating point arithmetic rounding errors
      */
-    public long getDistanceTo(Standstill standstill) {
+    public double getDistanceTo(Standstill standstill) {
         return location.getDistanceTo(standstill.getLocation());
     }
 
-    @Override
-    public String toString() {
-        if (location.getName() == null) {
-            return super.toString();
-        }
-        return location.getName();
-    }
+//    @Override
+//    public String toString() {
+//        if (location.getName() == null) {
+//            return super.toString();
+//        }
+//        return location.getName();
+//    }
 }
 

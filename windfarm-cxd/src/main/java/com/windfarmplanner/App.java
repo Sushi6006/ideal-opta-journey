@@ -9,17 +9,12 @@ import com.windfarmplanner.ScoreCalculator;
 import com.windfarmplanner.Depot;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.*;
-import java.util.stream.*;
 import java.lang.Integer;
-import java.lang.reflect.Array;
 
 import org.optaplanner.core.api.solver.Solver;
 import org.optaplanner.core.api.solver.SolverFactory;
@@ -141,12 +136,11 @@ public class App {
         Route solvedRoute = solver.solve(unsolvedRoute);
 
         // Display the result
-        System.out.println("\nSolved cloudBalance with given data:\n"
-                + toDisplayString(solvedRoute));
+//        System.out.println("\nSolved cloudBalance with given data:\n" + toDisplayString(solvedRoute));
 
     }
 
-    private Route creatRoute() {
+    private Route createRoute() {
         return new Route(this.vesselList, this.turbineList);
     }
 
