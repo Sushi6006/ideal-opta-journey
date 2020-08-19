@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/optaplanner-benchmark/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-benchmark/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-examples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-examples/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-integration/optaplanner-spring-boot-autoconfigure/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-integration/optaplanner-spring-boot-autoconfigure/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-jackson/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-jaxb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-jpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-jsonb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-xstream/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jackson/deployment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jackson/integration-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jackson/integration-test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jackson/runtime/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jackson/runtime/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jsonb/deployment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jsonb/integration-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jsonb/integration-test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jsonb/runtime/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jsonb/runtime/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus/deployment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus/runtime/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus/runtime/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/optaplanner-test/src/main/java" charset="UTF-8" />
+  </component>
+</project>

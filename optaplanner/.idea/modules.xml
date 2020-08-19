@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-benchmark/optaplanner-benchmark.iml" filepath="$PROJECT_DIR$/optaplanner-benchmark/optaplanner-benchmark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-bom/optaplanner-bom.iml" filepath="$PROJECT_DIR$/optaplanner-bom/optaplanner-bom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-build-parent/optaplanner-build-parent.iml" filepath="$PROJECT_DIR$/optaplanner-build-parent/optaplanner-build-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-core/optaplanner-core.iml" filepath="$PROJECT_DIR$/optaplanner-core/optaplanner-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-examples/optaplanner-examples.iml" filepath="$PROJECT_DIR$/optaplanner-examples/optaplanner-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-integration/optaplanner-integration.iml" filepath="$PROJECT_DIR$/optaplanner-integration/optaplanner-integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-parent.iml" filepath="$PROJECT_DIR$/optaplanner-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence.iml" filepath="$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-common/optaplanner-persistence-common.iml" filepath="$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-common/optaplanner-persistence-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-jackson/optaplanner-persistence-jackson.iml" filepath="$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-jackson/optaplanner-persistence-jackson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-jaxb/optaplanner-persistence-jaxb.iml" filepath="$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-jaxb/optaplanner-persistence-jaxb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-jpa/optaplanner-persistence-jpa.iml" filepath="$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-jpa/optaplanner-persistence-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-jsonb/optaplanner-persistence-jsonb.iml" filepath="$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-jsonb/optaplanner-persistence-jsonb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-xstream/optaplanner-persistence-xstream.iml" filepath="$PROJECT_DIR$/optaplanner-persistence/optaplanner-persistence-xstream/optaplanner-persistence-xstream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus/runtime/optaplanner-quarkus.iml" filepath="$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus/runtime/optaplanner-quarkus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus/deployment/optaplanner-quarkus-deployment.iml" filepath="$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus/deployment/optaplanner-quarkus-deployment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-integration.iml" filepath="$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jackson/runtime/optaplanner-quarkus-jackson.iml" filepath="$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jackson/runtime/optaplanner-quarkus-jackson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jackson/deployment/optaplanner-quarkus-jackson-deployment.iml" filepath="$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jackson/deployment/optaplanner-quarkus-jackson-deployment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jackson/integration-test/optaplanner-quarkus-jackson-integration-test.iml" filepath="$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jackson/integration-test/optaplanner-quarkus-jackson-integration-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jackson/optaplanner-quarkus-jackson-parent.iml" filepath="$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jackson/optaplanner-quarkus-jackson-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jsonb/runtime/optaplanner-quarkus-jsonb.iml" filepath="$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jsonb/runtime/optaplanner-quarkus-jsonb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jsonb/deployment/optaplanner-quarkus-jsonb-deployment.iml" filepath="$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jsonb/deployment/optaplanner-quarkus-jsonb-deployment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jsonb/integration-test/optaplanner-quarkus-jsonb-integration-test.iml" filepath="$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jsonb/integration-test/optaplanner-quarkus-jsonb-integration-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jsonb/optaplanner-quarkus-jsonb-parent.iml" filepath="$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus-jsonb/optaplanner-quarkus-jsonb-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus/optaplanner-quarkus-parent.iml" filepath="$PROJECT_DIR$/optaplanner-quarkus-integration/optaplanner-quarkus/optaplanner-quarkus-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-integration/optaplanner-spring-boot-autoconfigure/optaplanner-spring-boot-autoconfigure.iml" filepath="$PROJECT_DIR$/optaplanner-integration/optaplanner-spring-boot-autoconfigure/optaplanner-spring-boot-autoconfigure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-integration/optaplanner-spring-boot-starter/optaplanner-spring-boot-starter.iml" filepath="$PROJECT_DIR$/optaplanner-integration/optaplanner-spring-boot-starter/optaplanner-spring-boot-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/optaplanner-test/optaplanner-test.iml" filepath="$PROJECT_DIR$/optaplanner-test/optaplanner-test.iml" />
+    </modules>
+  </component>
+</project>
