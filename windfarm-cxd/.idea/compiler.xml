@@ -6,16 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="OptaplannerTest" />
+        <module name="optaplanner-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="optaplanner-core" target="1.8" />
       <module name="OptaplannerTest" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="OptaplannerTest" options="-Xmaxwarns 100 -Xlint -Xlint:-rawtypes -Xlint:-serial -Xlint:-unchecked" />
+      <module name="optaplanner-core" options="-Xmaxwarns 100 -Xlint -Xlint:-rawtypes -Xlint:-serial -Xlint:-unchecked" />
     </option>
   </component>
 </project>

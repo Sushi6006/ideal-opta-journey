@@ -136,7 +136,8 @@ public class App {
         Route solvedRoute = solver.solve(unsolvedRoute);
 
         // Display the result
-//        System.out.println("\nSolved cloudBalance with given data:\n");
+        // System.out.println("\nSolved cloudBalance with given data:\n");
+        System.out.println("Hello, world!");
 
     }
 
