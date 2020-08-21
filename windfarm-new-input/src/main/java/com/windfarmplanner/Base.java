@@ -2,20 +2,20 @@ package com.windfarmplanner;
 
 public class Base {
 
-    private int id;
+    private String id;
     protected Location location;
 
     public Base() {
     }
 
-    public Base(int id, Location location) {
+    public Base(String id, Location location) {
         this.id = id;
         this.location = location;
     }
 
-    public int getId() { return id; }
+    public String getId() { return id; }
 
-    public void setId(int id) { this.id = id; }
+    public void setId(String id) { this.id = id; }
 
     public Location getLocation() {
         return location;
@@ -29,11 +29,11 @@ public class Base {
         return location.getDistanceTo(standstill.getLocation());
     }
 
-//    @Override
-//    public String toString() {
-//        if (location.getName() == null) {
-//            return super.toString();
-//        }
-//        return location.getName();
-//    }
+    @Override
+    public String toString() {
+        if (location.getId() == null) {
+            return super.toString();
+        }
+        return location.getId();
+    }
 }

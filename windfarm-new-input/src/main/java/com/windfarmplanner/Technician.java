@@ -2,7 +2,7 @@ package com.windfarmplanner;
 
 public class Technician{
 
-    protected int id;
+    protected String id;
     protected String type;
 
     protected Vessel vessel;
@@ -10,16 +10,16 @@ public class Technician{
     public Technician() {
     }
 
-    public Technician(int id, String type) {
+    public Technician(String id, String type) {
         this.id = id;
         this.type = type;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) { this.id = id; }
+    public void setId(String id) { this.id = id; }
 
     public String getType() {
         return type;

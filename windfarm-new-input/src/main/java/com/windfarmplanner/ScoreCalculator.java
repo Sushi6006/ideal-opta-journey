@@ -1,8 +1,5 @@
 package com.windfarmplanner;
 
-import com.windfarmplanner.Standstill;
-import com.windfarmplanner.Vessel;
-import com.windfarmplanner.Turbine;
 import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
 import org.optaplanner.core.impl.score.director.easy.EasyScoreCalculator;
 import org.slf4j.Logger;
@@ -14,7 +11,9 @@ import java.util.Map;
 
 
 public class ScoreCalculator implements EasyScoreCalculator<Route> {
+
     protected final transient Logger logger = LoggerFactory.getLogger(getClass());
+//    protected Technician technician;
 
     @Override
     public HardSoftLongScore calculateScore(Route route) {
@@ -24,6 +23,9 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
         
         List<Turbine> turbineList = route.getTurbineList();
         List<Vessel> vesselList = route.getVesselList();
+        Technician technicianT;
+        Technician technicianV;
+
         
         Map<Vessel, Integer> vesselDemandMap = new HashMap<>(vesselList.size());
         for (Vessel vessel : vesselList) {
@@ -45,6 +47,12 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
                     // Score constraint distanceFromLastTurbineToDepot
                     softScore -= turbine.getLocation().getDistanceTo(vessel.getLocation());
                 }
+                for (technicianT : turbine.getTechnicianList();) {
+                    for (technicianV : vessel.getTechnicianList()) {
+                        if (technicianT.getType()
+                    }
+                }
+
                 // if (timeWindowed) {
                 //     TimeWindowedTurbine timeWindowedTurbine = (TimeWindowedTurbine) turbine;
                 //     long dueTime = timeWindowedTurbine.getDueTime();
@@ -66,8 +74,12 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
             }
         }
 
+
+
         // Score constraint arrivalAfterDueTimeAtDepot is a built-in hard constraint in VesselRoutingImporter
         return HardSoftLongScore.of(hardScore, softScore);
+
+        logger.debug("Hard Score ({}), Soft Score ({}) assigned technician ({})).", hardScore, , );
     }
 
 }

@@ -1,8 +1,8 @@
-T0,66
-T1,34
-T2,66
-T3,57
-T4,54
-T5,12
-T6,34
-T7,72
+T0,66,electrical
+T1,34,electrical
+T2,66,electrical
+T3,57,electrical
+T4,54,mechanical
+T5,12,mechanical
+T6,34,mechanical
+T7,72,mechanical

@@ -1,26 +1,25 @@
 package com.windfarmplanner;
-/*from optaplanner example vehiclerouting Location class*/
 
 public class Location {
 
-    protected int id;
+    protected String id;
     protected double latitude;
     protected double longitude;
 
     public Location() {
     }
 
-    public Location(int id, double latitude, double longitude) {
+    public Location(String id, double latitude, double longitude) {
         this.id = id;
         this.latitude = latitude;
         this.longitude = longitude;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -43,14 +42,6 @@ public class Location {
     // ************************************************************************
     // Complex methods
     // ************************************************************************
-
-    /**
-     * The distance's unit of measurement depends on the {@link VehicleRoutingSolution}'s {@link DistanceType}.
-     * It can be in miles or km, but for most cases it's in the TSPLIB's unit of measurement.
-     *
-     * @param location never null
-     * @return a positive number, the distance multiplied by 1000 to avoid floating point arithmetic rounding errors
-     */
     public double getDistanceTo(Location location){
         double latitudeDifference = location.latitude - latitude;
         double longitudeDifference = location.longitude - longitude;
@@ -58,13 +49,8 @@ public class Location {
                 (latitudeDifference * latitudeDifference) + (longitudeDifference * longitudeDifference));
     }
 
+    //The angle relative to the direction EAST.
 
-    /**
-     * The angle relative to the direction EAST.
-     *
-     * @param location never null
-     * @return in Cartesian coordinates
-     */
     public double getAngle(Location location) {
         // Euclidean distance (Pythagorean theorem) - not correct when the surface is a sphere
         double latitudeDifference = location.latitude - latitude;
@@ -72,12 +58,12 @@ public class Location {
         return Math.atan2(latitudeDifference, longitudeDifference);
     }
 
-//    @Override
-//    public String toString() {
-//        if (name == null) {
-//            return super.toString();
-//        }
-//        return name;
-//    }
+    @Override
+    public String toString() {
+        if (id == null) {
+            return super.toString();
+        }
+        return id;
+    }
 
 }
