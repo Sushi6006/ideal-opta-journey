@@ -1,5 +1,6 @@
 package com.windfarmplanner;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
 import org.optaplanner.core.impl.score.director.easy.EasyScoreCalculator;
 import org.slf4j.Logger;
@@ -20,13 +21,12 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
         
         // boolean timeWindowed = route instanceof TimeWindowedVesselRoutingSolution;
         // private Bool timeWindowed = false;
+
+        boolean hasTechnician = false;
         
         List<Turbine> turbineList = route.getTurbineList();
         List<Vessel> vesselList = route.getVesselList();
-        Technician technicianT;
-        Technician technicianV;
 
-        
         Map<Vessel, Integer> vesselDemandMap = new HashMap<>(vesselList.size());
         for (Vessel vessel : vesselList) {
             vesselDemandMap.put(vessel, 0);
@@ -40,6 +40,8 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
             Standstill previousStandstill = turbine.getPreviousStandstill();
             if (previousStandstill != null) {
                 Vessel vessel = turbine.getVessel();
+                List<Technician> turbineTechnicians = turbine.getTechnicianList();
+                List<Technician> vesselTechnicians = vessel.getTechnicianList();
                 vesselDemandMap.put(vessel, vesselDemandMap.get(vessel) + turbine.getDemand());
                 // Score constraint distanceToPreviousStandstill
                 softScore -= turbine.getDistanceFromPreviousStandstill();
@@ -47,9 +49,17 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
                     // Score constraint distanceFromLastTurbineToDepot
                     softScore -= turbine.getLocation().getDistanceTo(vessel.getLocation());
                 }
-                for (technicianT : turbine.getTechnicianList();) {
-                    for (technicianV : vessel.getTechnicianList()) {
-                        if (technicianT.getType()
+
+                for (Technician technicianT : turbineTechnicians){
+                    for (Technician technicianV : vesselTechnicians){
+                        if (technicianT.getType().equals(technicianV.getType())) {
+                            vessel.removeTechnician(technicianV);
+                            hasTechnician = true;
+                            break;
+                        }
+                    }
+                    if (hasTechnician == false){
+                        hardScore -= 10;
                     }
                 }
 
@@ -74,12 +84,15 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
             }
         }
 
+        logger.debug("hard Score ({});\n soft Score ({});\n", hardScore, softScore);
+        for (Vessel vessel : vesselList){
+            logger.debug("({})", vessel.getTurbineList());
+        }
 
 
-        // Score constraint arrivalAfterDueTimeAtDepot is a built-in hard constraint in VesselRoutingImporter
+            // Score constraint arrivalAfterDueTimeAtDepot is a built-in hard constraint in VesselRoutingImporter
         return HardSoftLongScore.of(hardScore, softScore);
 
-        logger.debug("Hard Score ({}), Soft Score ({}) assigned technician ({})).", hardScore, , );
     }
 
 }

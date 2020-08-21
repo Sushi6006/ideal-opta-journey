@@ -83,6 +83,7 @@ public class Turbine extends AbstractPersistable implements Standstill{
         this.vessel = vessel;
     }
 
+
     public double getDistanceFromPreviousStandstill() {
         if (previousStandstill == null) {
             throw new IllegalStateException("This method must not be called when the previousStandstill ("

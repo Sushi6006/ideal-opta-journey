@@ -121,7 +121,7 @@ public class App {
                 Location location = locationMap.get(id);
                 turbine.setLocation(location);
                 turbine.setDemand(Integer.parseInt(data[1]));
-                turbine.setTechnician(data[3]);
+                turbine.setTechnicianList(data[3]);
 
                 this.turbineList.add(turbine);
             }

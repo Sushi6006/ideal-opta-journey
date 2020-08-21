@@ -52,7 +52,7 @@ public class Vessel extends AbstractPersistable implements Standstill {
     public List getTechnicianList() {return technicianList;}
 
     public void addTechnicianList(Technician technician) {this.technicianList.add(technician);}
-    public void removeTechnicianList(Technician technician) {this.technicianList.remove(technician);}
+    public void removeTechnician(Technician technician) {this.technicianList.remove(technician);}
 
     @Override
     public Turbine getNextTurbine() {
@@ -63,6 +63,8 @@ public class Vessel extends AbstractPersistable implements Standstill {
     public void setNextTurbine(Turbine nextTurbine) {
         this.nextTurbine = nextTurbine;
     }
+
+    public Turbine getTurbineList(){return nextTurbine;}
 
     @Override
     public Vessel getVessel() {
