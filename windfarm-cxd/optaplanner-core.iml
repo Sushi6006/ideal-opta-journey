@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Osmorc" name="OSGi">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="optaplanner-core-7.41.0.Final.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="org.optaplanner.core" bundleVersion="${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}.202008201206" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+        <additionalProperties>
+          <property key="Bundle-Description" value="OptaPlanner solves planning problems.This lightweight, embeddable planning engine implements powerful and scalable algorithmsto optimize business resource scheduling and planning.This module contains the planning engine itself." />
+          <property key="Bundle-Vendor" value="JBoss by Red Hat" />
+          <property key="Bundle-DocURL" value="http://www.jboss.org/" />
+          <property key="Export-Package" value="org.optaplanner.core.*" />
+          <property key="-removeheaders" value="Ignore-Package" />
+          <property key="-nouses" value="true" />
+          <property key="-snapshot" value="202008201206" />
+          <property key="Scm-Revision" value="${buildNumber}" />
+          <property key="Bundle-Name" value="OptaPlanner core" />
+        </additionalProperties>
+        <additionalJARContents />
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
