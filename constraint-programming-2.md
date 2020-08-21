@@ -1,4 +1,17 @@
+<!-- omit in toc -->
 # 约束编程(Constraint Programming) - 2 - 2020-08-21
+
+**Table of Contents**
+- [概括](#概括)
+- [Class Diagram](#class-diagram)
+- [Implementation](#implementation)
+- [Score Calculator](#score-calculator)
+- [config.xml, pom.xml and Maven](#configxml-pomxml-and-maven)
+- [Output](#output)
+- [Version 2](#version-2)
+  - [输入](#输入)
+  - [ScoreCalculator](#scorecalculator)
+- [下周安排:](#下周安排)
 
 ## 概括
 我们上一周完成了初版的Class Diagram设计, 之后我们小组二人单独完成了代码并进行了讨论与整合<br>
@@ -14,12 +27,12 @@ vessel 002: base b0 -> turbine 008 -> turbine 002 -> turbine 007
 vessel 003: base b0 -> turbine 004
 ```
 后来在添加 OptaPlanner 的 AnchorShadowVariable (Part, Technician等) 的时候, 因为操作不当(文档太烂)更改了Maven环境的设置, 导致了目前程序无法运行。现在还在修复/调试的过程当中。
-<br><br><br>
+<br><br>
 
 ## Class Diagram
 上一周我们完成了初版Class Diagram的设计
 ![](img/class-diagram.png)
-<br><br><br>
+<br><br>
 
 ## Implementation
 我们建立了与Class Diagram相对应的以及OptaPlanner所需要的Java Classes:
@@ -38,7 +51,7 @@ vessel 003: base b0 -> turbine 004
 后来, 根据设计的方便性, 我们添加了一个Concrete Class与一个Interface
 - `Location.java` -> Location Entity
 - `Standstill.java` -> Standstill Interface用来表示状态, 船只的每一次停下都算是一个状态
-<br><br><br>
+<br><br>
 
 ## Score Calculator
 我们的目标是让第一个版本尽可能的简单, 使用最少的约束条件先使代码可以运行<br>
@@ -64,7 +77,17 @@ vessel 003: base b0 -> turbine 004
   - base/turbine
   - longitude
   - lattitude
+<br><br>
 
+## config.xml, pom.xml and Maven
+我们根据OptaPlanner的文档以及提供的Examples完成了调用OptaPlanner Core的配置
+- `config.xml`
+  - 提供了PlanningEntity, PlanningSolution, ScoreCalculator等信息
+- `pom.xml`
+  - 提供了Maven编译信息, 包括了Classes, Libraries之间的dependencies
+- Maven
+  - 在IntelliJ IDEA中配置好了maven project以运行我们的程序
+<br><br>
 
 ## Output
 ```txt
@@ -74,6 +97,7 @@ vessel 001: base b0 -> turbine 006 -> turbine 002 -> turbine 001 -> turbine 003 
 vessel 002: base b0 -> turbine 008 -> turbine 002 -> turbine 007
 vessel 003: base b0 -> turbine 004
 ```
+<br><br>
 
 ## Version 2
 在跑通了基础case之后我们尝试添加了新的Variable, 随之我们也更改了我们的输入与ScoreCalculator:
@@ -114,3 +138,10 @@ for (Technician technicianT : turbineTechnicians){
     }
 }
 ```
+<br><br>
+
+## 下周安排:
+- [ ] 修复Maven
+- [ ] 完成新的classes的添加
+- [ ] 测试更为庞大的数据 (继续使用随机生成)
+- [ ] 优化输入类型
