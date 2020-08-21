@@ -24,6 +24,7 @@ public class App {
     private int technicianListSize;
     private Map<String, Location> locationMap;
     private Map<String, Base> baseMap;
+    private Map<String, Technician> technicianMap;
 
     protected List<Base> baseList;
     protected List<Vessel> vesselList;
@@ -86,6 +87,7 @@ public class App {
 
                 baseMap.put(base.getId(), base);
 
+
                 this.baseList.add(base);
             }
             csvReader.close();
@@ -121,7 +123,7 @@ public class App {
                 Location location = locationMap.get(id);
                 turbine.setLocation(location);
                 turbine.setDemand(Integer.parseInt(data[1]));
-                turbine.setTechnicianList(data[3]);
+//                turbine.setTechnicianList(data[3]);
 
                 this.turbineList.add(turbine);
             }
@@ -140,6 +142,10 @@ public class App {
                 technician.setType(data[1]);
 
                 this.technicianList.add(technician);
+                technicianMap.put(technician.getId(), technician);
+                Base base = baseMap.get(id);
+                technician.setBase(base);
+
             }
             csvReader.close();
 
@@ -153,7 +159,7 @@ public class App {
         Solver<Route> solver = solverFactory.buildSolver();
 
         // Load a problem with given data
-        logger.info("Load problem with dataset")
+        logger.info("Load problem with dataset");
         Route unsolvedRoute = this.createRoute();
 
         // Solve the problem
