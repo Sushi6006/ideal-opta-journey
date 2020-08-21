@@ -6,6 +6,7 @@ public class Technician{
     protected String type;
 
     protected Vessel vessel;
+    protected Base base;
 
     public Technician() {
     }
@@ -34,4 +35,8 @@ public class Technician{
     public void setVessel(Vessel vessel) {
         this.vessel = vessel;
     }
+
+    public Base getBase() { return base; }
+
+    public void setBase(Base base) {this.base = base; }
 }
