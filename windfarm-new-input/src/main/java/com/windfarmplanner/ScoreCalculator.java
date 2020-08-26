@@ -1,6 +1,6 @@
 package com.windfarmplanner;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
+// import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
 import org.optaplanner.core.impl.score.director.easy.EasyScoreCalculator;
 import org.slf4j.Logger;

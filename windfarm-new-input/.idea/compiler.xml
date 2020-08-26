@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="OptaplannerTest" />
         <module name="windfarm" />
+        <module name="windfarm-new-input" />
       </profile>
     </annotationProcessing>
   </component>
@@ -15,6 +16,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="OptaplannerTest" options="-Xmaxwarns 100 -Xlint -Xlint:-rawtypes -Xlint:-serial -Xlint:-unchecked" />
       <module name="windfarm" options="-Xmaxwarns 100 -Xlint -Xlint:-rawtypes -Xlint:-serial -Xlint:-unchecked" />
+      <module name="windfarm-new-input" options="-Xmaxwarns 100 -Xlint -Xlint:-rawtypes -Xlint:-serial -Xlint:-unchecked" />
     </option>
   </component>
 </project>
