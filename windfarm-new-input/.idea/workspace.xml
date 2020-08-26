@@ -1,19 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc370ad-1f7f-4976-bbb9-571e0139c7c2" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/ScoreCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/ScoreCalculator.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/windfarm-new-input.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/ScoreCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/ScoreCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Depot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Part.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Part.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Route.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Route.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/ScoreCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/ScoreCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Standstill.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Standstill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Technician.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Technician.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Turbine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Turbine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Vessel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Vessel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/windfarmplanner/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/windfarmplanner/AppTest.class" afterDir="false" />
+>>>>>>> 51ea7fee349979b42479d0114e1f170010956c44
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FUSProjectUsageTrigger">
     <session id="1748444762">
       <usages-collector id="statistics.lifecycle.project">
@@ -236,6 +258,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> 51ea7fee349979b42479d0114e1f170010956c44
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -251,6 +275,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -275,98 +300,51 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 51ea7fee349979b42479d0114e1f170010956c44
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="1">
+=======
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+>>>>>>> 51ea7fee349979b42479d0114e1f170010956c44
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="825" />
   </component>
+  <component name="ProjectId" id="1gcxCIAZn8rtI3mp1JaprLJb67U" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="windfarm-new-input" type="b2602c69:ProjectViewProjectNode" />
-              <item name="windfarm-new-input" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="windfarm-new-input" type="b2602c69:ProjectViewProjectNode" />
-              <item name="windfarm-new-input" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="windfarm-new-input" type="b2602c69:ProjectViewProjectNode" />
-              <item name="windfarm-new-input" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="windfarm-new-input" type="b2602c69:ProjectViewProjectNode" />
-              <item name="windfarm-new-input" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="windfarm-new-input" type="b2602c69:ProjectViewProjectNode" />
-              <item name="windfarm-new-input" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="windfarmplanner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="windfarm-new-input" type="b2602c69:ProjectViewProjectNode" />
-              <item name="windfarm-new-input" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="windfarmplanner" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Course" />
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597999552560" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="MavenRunConfiguration" factoryName="Maven">
+    <configuration name="test-configuration" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings">
@@ -391,7 +369,9 @@
               <set />
             </option>
             <option name="goals">
-              <list />
+              <list>
+                <option value="compiler:compile" />
+              </list>
             </option>
             <option name="pomFileName" />
             <option name="profilesMap">
@@ -405,6 +385,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -424,6 +405,7 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="23487000" />
   </component>
+<<<<<<< HEAD
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="1" />
     <layout>
@@ -489,12 +471,15 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout-to-restore>
   </component>
+=======
+>>>>>>> 51ea7fee349979b42479d0114e1f170010956c44
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
+<<<<<<< HEAD
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -673,5 +658,36 @@
         </settings>
       </state>
     </states>
+=======
+  <component name="WindowStateProjectService">
+    <state x="424" y="213" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598430611810">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="424" y="213" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598430611810" />
+    <state x="678" y="242" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1598430610892">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="678" y="242" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598430610892" />
+    <state width="1878" height="289" key="GridCell.Tab.0.bottom" timestamp="1598430577327">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="289" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598430577327" />
+    <state width="1878" height="289" key="GridCell.Tab.0.center" timestamp="1598430577326">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="289" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598430577326" />
+    <state width="1878" height="289" key="GridCell.Tab.0.left" timestamp="1598430577326">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="289" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598430577326" />
+    <state width="1878" height="289" key="GridCell.Tab.0.right" timestamp="1598430577327">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="289" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598430577327" />
+    <state x="448" y="133" key="SettingsEditor" timestamp="1598430805105">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="448" y="133" key="SettingsEditor/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598430805105" />
+>>>>>>> 51ea7fee349979b42479d0114e1f170010956c44
   </component>
 </project>
