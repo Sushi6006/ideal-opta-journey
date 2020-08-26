@@ -18,12 +18,12 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
 
     @Override
     public HardSoftLongScore calculateScore(Route route) {
-        
+
         // boolean timeWindowed = route instanceof TimeWindowedVesselRoutingSolution;
         // private Bool timeWindowed = false;
 
         boolean hasTechnician = false;
-        
+
         List<Turbine> turbineList = route.getTurbineList();
         List<Vessel> vesselList = route.getVesselList();
 
@@ -34,7 +34,7 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
 
         long hardScore = 0L;
         long softScore = 0L;
-        
+
         // calculation
         for (Turbine turbine : turbineList) {
             Standstill previousStandstill = turbine.getPreviousStandstill();
@@ -90,7 +90,7 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
         }
 
 
-            // Score constraint arrivalAfterDueTimeAtDepot is a built-in hard constraint in VesselRoutingImporter
+        // Score constraint arrivalAfterDueTimeAtDepot is a built-in hard constraint in VesselRoutingImporter
         return HardSoftLongScore.of(hardScore, softScore);
 
     }
