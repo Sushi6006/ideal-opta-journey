@@ -3,6 +3,8 @@ package com.windfarmplanner;
 import com.thoughtworks.xstream.annotations.XStreamConverter;
 import org.optaplanner.core.api.domain.solution.PlanningScore;
 import org.optaplanner.core.api.domain.solution.PlanningSolution;
+import org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty;
+import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
 import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
 import org.optaplanner.persistence.xstream.api.score.buildin.hardsoft.HardSoftScoreXStreamConverter;
 
@@ -29,10 +31,13 @@ public class Route {
         this.turbineList = turbineList;
     }
 
+    @PlanningEntityCollectionProperty
+    @ValueRangeProvider(id = "turbineRange")
     public List<Turbine> getTurbineList() {
         return turbineList;
     }
 
+    @ValueRangeProvider(id = "vesselRange")
     public List<Vessel> getVesselList() {
         return vesselList;
     }

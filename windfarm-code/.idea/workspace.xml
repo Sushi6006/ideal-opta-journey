@@ -5,163 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc370ad-1f7f-4976-bbb9-571e0139c7c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/logback-test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/app/GeneralBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cheaptime/app/CheapTimeBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cheaptime/app/CheapTimePerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cheaptime/app/CheapTimeSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cheaptime/persistence/CheapTimeImporterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cheaptime/persistence/CheapTimeOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cloudbalancing/app/CloudBalancingBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cloudbalancing/app/CloudBalancingConstructionHeuristicTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cloudbalancing/app/CloudBalancingDaemonTest$SolverThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cloudbalancing/app/CloudBalancingDaemonTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cloudbalancing/app/CloudBalancingExhaustiveSearchTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cloudbalancing/app/CloudBalancingPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cloudbalancing/app/CloudBalancingRealTimePlanningTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cloudbalancing/app/CloudBalancingSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cloudbalancing/persistence/CloudBalancingOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/cloudbalancing/solver/CloudBalancingScoreConstraintTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/coachshuttlegathering/app/CoachShuttleGatheringPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/coachshuttlegathering/app/CoachShuttleGatheringSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/coachshuttlegathering/persistence/CoachShuttleGatheringImporterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/coachshuttlegathering/persistence/CoachShuttleGatheringOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/TestSystemProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/TurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/app/AbstractBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/app/AbstractConstructionHeuristicTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/app/AbstractExhaustiveSearchTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/app/AbstractPhaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/app/ImportDirSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/app/LoggingTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/app/PlannerBenchmarkTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/app/RealTimePlanningTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/app/SolveAllTurtleTest$ProblemFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/app/SolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/app/SolverPerformanceTest$TestData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/app/SolverPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/app/UnsolvedDirSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/business/AlphaNumericStringComparatorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/persistence/AbstractSolutionImporterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/persistence/AbstractTxtSolutionImporterTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/persistence/AbstractTxtSolutionImporterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/persistence/ImportDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/persistence/OpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/persistence/StringDataGeneratorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/common/solver/drools/functions/LoadBalanceByCountAccumulateFunctionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/conferencescheduling/app/ConferenceSchedulingPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/conferencescheduling/app/ConferenceSchedulingSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/conferencescheduling/persistence/ConferenceSchedulingOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/conferencescheduling/solver/ConferenceSchedulingConstraintsXlsxTest$TestConferenceSchedulingConstraintsReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/conferencescheduling/solver/ConferenceSchedulingConstraintsXlsxTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/conferencescheduling/solver/ConferenceSchedulingScoreHardConstraintTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/conferencescheduling/solver/ConferenceSchedulingScoreSoftConstraintTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/conferencescheduling/solver/testConferenceSchedulingConstraints.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/curriculumcourse/app/CurriculumCourseBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/curriculumcourse/app/CurriculumCourseConstructionHeuristicTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/curriculumcourse/app/CurriculumCourseExhaustiveSearchTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/curriculumcourse/app/CurriculumCoursePerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/curriculumcourse/app/CurriculumCourseSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/curriculumcourse/persistence/CurriculumCourseImporterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/curriculumcourse/persistence/CurriculumCourseOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/dinnerparty/app/DinnerPartyPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/dinnerparty/app/DinnerPartySolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/dinnerparty/persistence/DinnerPartyOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/examination/app/ExaminationBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/examination/app/ExaminationPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/examination/app/ExaminationSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/examination/data/testExaminationScoreRules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/examination/persistence/ExaminationImporterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/examination/persistence/ExaminationOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/examination/solver/score/ExaminationConstraintProviderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/flightcrewscheduling/app/FlightCrewSchedulingPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/flightcrewscheduling/app/FlightCrewSchedulingSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/flightcrewscheduling/persistence/FlightCrewSchedulingOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/investment/app/InvestmentPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/investment/app/InvestmentSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/investment/persistence/InvestmentImporterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/investment/persistence/InvestmentOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/machinereassignment/app/MachineReassignmentBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/machinereassignment/app/MachineReassignmentPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/machinereassignment/app/MachineReassignmentSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/machinereassignment/persistence/MachineReassignmentImporterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/machinereassignment/persistence/MachineReassignmentOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/machinereassignment/solver/score/MachineReassignmentConstraintProviderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/machinereassignment/solver/score/model-a1-1-0hard-44306501soft.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/meetingscheduling/app/MeetingSchedulingPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/meetingscheduling/app/MeetingSchedulingSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/meetingscheduling/persistence/MeetingSchedulingOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/meetingscheduling/solver/MeetingSchedulingScoreConstraintTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/app/BrokenNQueensBenchmarkTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/app/NQueensAppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/app/NQueensBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/app/NQueensBenchmarkTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/app/NQueensConstructionHeuristicTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/app/NQueensExhaustiveSearchTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/app/NQueensPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/app/NQueensSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/persistence/NQueensOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/solver/score/256queensScore-30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/solver/score/NQueensConstraintProviderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/solver/tracking/NQueensAbstractTrackingTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/solver/tracking/NQueensConstructionHeuristicTrackingTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/solver/tracking/NQueensLocalSearchTrackingTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/solver/tracking/NQueensSolutionInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/solver/tracking/NQueensStepTracker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nqueens/solver/tracking/NQueensStepTracking.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nurserostering/app/NurseRosteringBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nurserostering/app/NurseRosteringPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nurserostering/app/NurseRosteringSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nurserostering/data/testNurseRosteringScoreRules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nurserostering/persistence/NurseRosteringImporterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/nurserostering/persistence/NurseRosteringOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/pas/app/PatientAdmissionScheduleBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/pas/app/PatientAdmissionSchedulePerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/pas/app/PatientAdmissionScheduleSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/pas/persistence/PatientAdmissionScheduleImporterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/pas/persistence/PatientAdmissionScheduleOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/projectjobscheduling/app/ProjectJobSchedulingBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/projectjobscheduling/app/ProjectJobSchedulingPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/projectjobscheduling/app/ProjectJobSchedulingSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/projectjobscheduling/persistence/ProjectJobSchedulingImporterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/projectjobscheduling/persistence/ProjectJobSchedulingOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/rocktour/app/RockTourPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/rocktour/app/RockTourSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/rocktour/persistence/RockTourOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/scrabble/app/ScrabblePerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/taskassigning/app/TaskAssigningPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/taskassigning/app/TaskAssigningSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/taskassigning/persistence/TaskAssigningOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/taskassigning/solver/TaskAssigningScoreConstraintTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/tennis/app/TennisBenchmarkTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/tennis/app/TennisPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/tennis/app/TennisSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/tennis/persistence/TennisOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/travelingtournament/app/TravelingTournamentBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/travelingtournament/app/TravelingTournamentPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/travelingtournament/app/TravelingTournamentSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/travelingtournament/persistence/TravelingTournamentImporterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/travelingtournament/persistence/TravelingTournamentOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/tsp/app/TspBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/tsp/app/TspConstructionHeuristicTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/tsp/app/TspPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/tsp/app/TspSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/tsp/persistence/TspImporterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/tsp/persistence/TspOpenDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/vehiclerouting/app/VehicleRoutingBenchmarkConfigTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/vehiclerouting/app/VehicleRoutingMultiThreadedReproducibilityTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/vehiclerouting/app/VehicleRoutingPerformanceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/vehiclerouting/app/VehicleRoutingSolveAllTurtleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/vehiclerouting/domain/location/segmented/RoadSegmentLocationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/vehiclerouting/optional/score/VehicleRoutingConstraintProviderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/vehiclerouting/persistence/VehicleRoutingImportDataFilesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../optaplanner-distribution-7.39.0.Final/examples/sources/target/test-classes/org/optaplanner/examples/vehiclerouting/persistence/VehicleRoutingOpenDataFilesTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/data/technician.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/data/technician.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Turbine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Turbine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/ScoreCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/ScoreCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Vessel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Vessel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,6 +66,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application">
@@ -305,22 +162,26 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="773" y="265" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598534104947" />
-    <state width="1878" height="289" key="GridCell.Tab.0.bottom" timestamp="1598535284565">
+    <state width="1878" height="289" key="GridCell.Tab.0.bottom" timestamp="1598539331302">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="289" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598535284565" />
-    <state width="1878" height="289" key="GridCell.Tab.0.center" timestamp="1598535284564">
+    <state width="1878" height="289" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598539331302" />
+    <state width="1878" height="289" key="GridCell.Tab.0.center" timestamp="1598539331301">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="289" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598535284564" />
-    <state width="1878" height="289" key="GridCell.Tab.0.left" timestamp="1598535284564">
+    <state width="1878" height="289" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598539331301" />
+    <state width="1878" height="289" key="GridCell.Tab.0.left" timestamp="1598539331300">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="289" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598535284564" />
-    <state width="1878" height="289" key="GridCell.Tab.0.right" timestamp="1598535284565">
+    <state width="1878" height="289" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598539331300" />
+    <state width="1878" height="289" key="GridCell.Tab.0.right" timestamp="1598539331301">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="289" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598535284565" />
+    <state width="1878" height="289" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598539331301" />
+    <state x="498" y="213" key="Maven.ArtifactSearchDialog" timestamp="1598539240513">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="498" y="213" key="Maven.ArtifactSearchDialog/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598539240513" />
     <state x="448" y="133" key="SettingsEditor" timestamp="1598535066146">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>

@@ -3,6 +3,7 @@ package com.windfarmplanner;
 import com.windfarmplanner.Location;
 import com.windfarmplanner.Standstill;
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
+import org.optaplanner.core.api.domain.lookup.PlanningId;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;
 import org.optaplanner.core.api.domain.variable.PlanningVariableGraphType;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
@@ -49,6 +50,11 @@ public class Turbine extends AbstractPersistable implements Standstill{
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    @PlanningId
+    public String getId() {
+        return id;
     }
 
     public List getTechnicianList() {return technicianList;}
