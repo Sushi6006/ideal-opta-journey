@@ -1,0 +1,23 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+
+    <!-- Domain model configuration -->
+    <solutionClass>windfarm.domain.Route</solutionClass>
+    <entityClass>windfarm.domain.Turbine</entityClass>
+
+    <!-- Score configuration -->
+    <!-- TODO: -->
+    <scoreDirectorFactory>
+        <easyScoreCalculatorClass>windfarm.domain.ScoreCalculator</easyScoreCalculatorClass>
+        <!-- TODO: potential drool file | example below -->
+        <!--<scoreDrl>org/optaplanner/examples/cloudbalancing/solver/cloudBalancingConstraints.drl</scoreDrl>-->
+    </scoreDirectorFactory>
+
+    <!-- Optimization algorithms configuration -->
+    <termination>
+        <secondsSpentLimit>300</secondsSpentLimit>
+    </termination>
+
+</solver>

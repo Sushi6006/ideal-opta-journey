@@ -51,7 +51,7 @@ public class App {
         logger.info("loading data");
         try {
             //size for variables
-            csvReader = new BufferedReader(new FileReader("/data/sizes.csv"));
+            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/sizes.csv"));
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
                 if (data[0]=="turbine"){
@@ -69,13 +69,20 @@ public class App {
             }
             csvReader.close();
 
+            baseMap = new LinkedHashMap<>(baseListSize);
+            locationMap = new LinkedHashMap<>(turbineListSize);
+            technicianMap = new LinkedHashMap<>(technicianListSize);
 
-            //location
-            csvReader = new BufferedReader(new FileReader("/data/location.csv"));
+            baseList = new ArrayList<>(baseListSize);
+            vesselList = new ArrayList<>(vesselListSize);
+            turbineList = new ArrayList<>(turbineListSize);
+            technicianList = new ArrayList<>(technicianListSize);
+
+            // location
+            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/location.csv"));
             while ((row = csvReader.readLine()) != null) {
                 Location location = new Location();
                 String[] data = row.split(",");
-                locationMap = new LinkedHashMap<>(turbineListSize);
                 location.setId(data[0]);
                 location.setLatitude(Double.parseDouble(data[1]));
                 location.setLongitude(Double.parseDouble(data[2]));
@@ -86,7 +93,7 @@ public class App {
 
 
             // base
-            csvReader = new BufferedReader(new FileReader("/data/base.csv"));
+            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/base.csv"));
 
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
@@ -94,15 +101,13 @@ public class App {
                 base.setId(data[0]);
 
                 baseMap.put(base.getId(), base);
-
-
-                this.baseList.add(base);
+                baseList.add(base);
             }
             csvReader.close();
 
 
             // vessels
-            csvReader = new BufferedReader(new FileReader("/data/vessel.csv"));
+            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/vessel.csv"));
 
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
@@ -120,7 +125,7 @@ public class App {
 
 
             // turbines
-            csvReader = new BufferedReader(new FileReader("/data/turbine.csv"));
+            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/turbine.csv"));
 
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
@@ -139,11 +144,10 @@ public class App {
 
 
             //Technician
-            csvReader = new BufferedReader(new FileReader("/data/technician.csv"));
+            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/technician.csv"));
 
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
-
                 Technician technician = new Technician();
                 String id = data[0];
                 technician.setId(id);
@@ -164,8 +168,8 @@ public class App {
 
     public void solve(){
         // Build the Solver
-        logger.info("Bulid solver");
-        SolverFactory<Route> solverFactory = SolverFactory.createFromXmlResource("/config.xml");
+        logger.info("Build solver");
+        SolverFactory<Route> solverFactory = SolverFactory.createFromXmlResource("config.xml");
         Solver<Route> solver = solverFactory.buildSolver();
 
         // Load a problem with given data
