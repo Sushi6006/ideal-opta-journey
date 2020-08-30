@@ -1,7 +1,7 @@
 package com.windfarmplanner;
 
 // import com.sun.org.apache.xpath.internal.operations.Bool;
-import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
+import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
 import org.optaplanner.core.impl.score.director.easy.EasyScoreCalculator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +17,7 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
 //    protected Technician technician;
 
     @Override
-    public HardSoftLongScore calculateScore(Route route) {
+    public HardSoftScore calculateScore(Route route) {
 
         // boolean timeWindowed = route instanceof TimeWindowedVesselRoutingSolution;
         // private Bool timeWindowed = false;
@@ -32,8 +32,8 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
             vesselDemandMap.put(vessel, 0);
         }
 
-        long hardScore = 0L;
-        long softScore = 0L;
+        int hardScore = 0;
+        int softScore = 0;
 
         // calculation
         for (Turbine turbine : turbineList) {
@@ -91,7 +91,7 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
 
 
         // Score constraint arrivalAfterDueTimeAtDepot is a built-in hard constraint in VesselRoutingImporter
-        return HardSoftLongScore.of(hardScore, softScore);
+        return HardSoftScore.of(hardScore, softScore);
 
     }
 

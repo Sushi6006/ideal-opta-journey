@@ -51,7 +51,6 @@ public class Turbine extends AbstractPersistable implements Standstill{
         this.id = id;
     }
 
-    @PlanningId
     public Long getId() {
         return id;
     }
