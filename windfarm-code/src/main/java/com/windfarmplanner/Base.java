@@ -1,21 +1,20 @@
 package com.windfarmplanner;
 
-public class Base {
+public class Base extends AbstractPersistable {
 
-    private String id;
     protected Location location;
 
     public Base() {
     }
 
-    public Base(String id, Location location) {
-        this.id = id;
+    public Base(Long id, Location location) {
+        super(id);
         this.location = location;
     }
 
-    public String getId() { return id; }
+    public Long getId() { return id; }
 
-    public void setId(String id) { this.id = id; }
+    public void setId(Long id) { this.id = id; }
 
     public Location getLocation() {
         return location;
@@ -34,6 +33,6 @@ public class Base {
         if (location.getId() == null) {
             return super.toString();
         }
-        return location.getId();
+        return "" + location.getId();
     }
 }

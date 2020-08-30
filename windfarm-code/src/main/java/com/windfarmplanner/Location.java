@@ -1,25 +1,24 @@
 package com.windfarmplanner;
 
-public class Location {
+public class Location extends AbstractPersistable {
 
-    protected String id;
     protected double latitude;
     protected double longitude;
 
     public Location() {
     }
 
-    public Location(String id, double latitude, double longitude) {
-        this.id = id;
+    public Location(Long id, double latitude, double longitude) {
+        super(id);
         this.latitude = latitude;
         this.longitude = longitude;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -63,7 +62,7 @@ public class Location {
         if (id == null) {
             return super.toString();
         }
-        return id;
+        return "" + id;
     }
 
 }

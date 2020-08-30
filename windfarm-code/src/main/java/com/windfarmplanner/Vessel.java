@@ -9,7 +9,6 @@ import java.util.List;
 @XStreamAlias("Vessel")
 public class Vessel extends AbstractPersistable implements Standstill {
 
-    protected String id;
     protected int capacity;
     protected Base base;
 
@@ -19,17 +18,17 @@ public class Vessel extends AbstractPersistable implements Standstill {
     public Vessel() {
     }
 
-    public Vessel(String id, int capacity, Base base) {
-        this.id = id;
+    public Vessel(Long id, int capacity, Base base) {
+        super(id);
         this.capacity = capacity;
         this.base = base;
     }
 
-//    public int getId() {
-//        return id;
-//    }
+    public Long getId() {
+        return id;
+    }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

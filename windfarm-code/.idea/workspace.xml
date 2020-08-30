@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bc370ad-1f7f-4976-bbb9-571e0139c7c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/AbstractPersistable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Part.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Technician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Technician.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Turbine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Turbine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/ScoreCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/ScoreCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Vessel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/windfarmplanner/Vessel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Vessel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/windfarmplanner/Vessel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +43,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="825" />
-  </component>
   <component name="ProjectId" id="1gd5vZFK6u5kidIYp5Ps9WdJxiK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -162,22 +159,22 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="773" y="265" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598534104947" />
-    <state width="1878" height="289" key="GridCell.Tab.0.bottom" timestamp="1598539331302">
+    <state width="1878" height="289" key="GridCell.Tab.0.bottom" timestamp="1598784551980">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="289" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598539331302" />
-    <state width="1878" height="289" key="GridCell.Tab.0.center" timestamp="1598539331301">
+    <state width="1878" height="289" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598784551980" />
+    <state width="1878" height="289" key="GridCell.Tab.0.center" timestamp="1598784551980">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="289" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598539331301" />
-    <state width="1878" height="289" key="GridCell.Tab.0.left" timestamp="1598539331300">
+    <state width="1878" height="289" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598784551980" />
+    <state width="1878" height="289" key="GridCell.Tab.0.left" timestamp="1598784551980">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="289" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598539331300" />
-    <state width="1878" height="289" key="GridCell.Tab.0.right" timestamp="1598539331301">
+    <state width="1878" height="289" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598784551980" />
+    <state width="1878" height="289" key="GridCell.Tab.0.right" timestamp="1598784551980">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="289" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598539331301" />
+    <state width="1878" height="289" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1598784551980" />
     <state x="498" y="213" key="Maven.ArtifactSearchDialog" timestamp="1598539240513">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>

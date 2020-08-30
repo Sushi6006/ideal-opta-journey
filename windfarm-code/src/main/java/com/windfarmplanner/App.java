@@ -22,9 +22,9 @@ public class App {
     private int vesselListSize;
     private int baseListSize;
     private int technicianListSize;
-    private Map<String, Location> locationMap;
-    private Map<String, Base> baseMap;
-    private Map<String, Technician> technicianMap;
+    private Map<Long, Location> locationMap;
+    private Map<Long, Base> baseMap;
+    private Map<Long, Technician> technicianMap;
 
     protected List<Base> baseList;
     protected List<Vessel> vesselList;
@@ -83,7 +83,7 @@ public class App {
             while ((row = csvReader.readLine()) != null) {
                 Location location = new Location();
                 String[] data = row.split(",");
-                location.setId(data[0]);
+                location.setId(Long.parseLong(data[0]));
                 location.setLatitude(Double.parseDouble(data[1]));
                 location.setLongitude(Double.parseDouble(data[2]));
 
@@ -98,7 +98,7 @@ public class App {
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
                 Base base = new Base();
-                base.setId(data[0]);
+                base.setId(Long.parseLong(data[0]));
 
                 baseMap.put(base.getId(), base);
                 baseList.add(base);
@@ -113,7 +113,7 @@ public class App {
                 String[] data = row.split(",");
 
                 Vessel vessel = new Vessel();
-                String id = data[0];
+                Long id = Long.parseLong(data[0]);
                 vessel.setId(id);
                 vessel.setCapacity(Integer.parseInt(data[1]));
                 Base base = baseMap.get(id);
@@ -131,7 +131,7 @@ public class App {
                 String[] data = row.split(",");
 
                 Turbine turbine = new Turbine();
-                String id = data[0];
+                Long id = Long.parseLong(data[0]);
                 turbine.setId(id);
                 Location location = locationMap.get(id);
                 turbine.setLocation(location);
@@ -149,7 +149,7 @@ public class App {
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
                 Technician technician = new Technician();
-                String id = data[0];
+                Long id = Long.parseLong(data[0]);
                 technician.setId(id);
                 technician.setType(data[1]);
 

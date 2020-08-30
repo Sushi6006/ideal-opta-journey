@@ -1,15 +1,14 @@
 package com.windfarmplanner;
 
-public class Part{
-    protected int id;
+public class Part extends AbstractPersistable {
     protected String name;
     protected double weight;
 
     public Part() {
     }
 
-    public Part(int id, String name, double weight) {
-        this.id = id;
+    public Part(Long id, String name, double weight) {
+        super(id);
         this.name = name;
         this.weight = weight;
     }

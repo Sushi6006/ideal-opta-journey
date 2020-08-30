@@ -1,8 +1,7 @@
 package com.windfarmplanner;
 
-public class Technician{
+public class Technician extends AbstractPersistable {
 
-    protected String id;
     protected String type;
 
     protected Vessel vessel;
@@ -11,16 +10,16 @@ public class Technician{
     public Technician() {
     }
 
-    public Technician(String id, String type) {
-        this.id = id;
+    public Technician(Long id, String type) {
+        super(id);
         this.type = type;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) { this.id = id; }
+    public void setId(Long id) { this.id = id; }
 
     public String getType() {
         return type;

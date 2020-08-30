@@ -13,7 +13,6 @@ import java.util.List;
 @PlanningEntity
 public class Turbine extends AbstractPersistable implements Standstill{
 
-    protected String id;
     protected Location location;
     protected int demand;
 
@@ -26,8 +25,8 @@ public class Turbine extends AbstractPersistable implements Standstill{
 
     public Turbine() { }
 
-    public Turbine(String id, Location location, int demand) {
-        this.id = id;
+    public Turbine(Long id, Location location, int demand) {
+        super(id);
         this.location = location;
         this.demand = demand;
     }
@@ -48,12 +47,12 @@ public class Turbine extends AbstractPersistable implements Standstill{
         this.demand = demand;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
     @PlanningId
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
@@ -111,7 +110,7 @@ public class Turbine extends AbstractPersistable implements Standstill{
         if (location.getId() == null) {
             return super.toString();
         }
-        return location.getId();
+        return "" + location.getId();
     }
 
 }
