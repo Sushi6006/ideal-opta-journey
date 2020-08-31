@@ -18,6 +18,8 @@ public class Route {
     private List<Turbine> turbineList;
     // planning variable
     private List<Vessel> vesselList;
+    // planning whatever
+    private List<Technician> technicianList;
 
     @XStreamConverter(HardSoftScoreXStreamConverter.class)
     private HardSoftScore score;
@@ -37,6 +39,7 @@ public class Route {
         return turbineList;
     }
 
+    @PlanningEntityCollectionProperty
     @ValueRangeProvider(id = "vesselRange")
     public List<Vessel> getVesselList() {
         return vesselList;
@@ -44,6 +47,14 @@ public class Route {
 
     public void setVesselList(List<Vessel> vesselList) {
         this.vesselList = vesselList;
+    }
+
+    public List<Technician> getTechnicianList() {
+        return technicianList;
+    }
+
+    public void setTechnicianList(List<Technician> technicianList) {
+        this.technicianList = technicianList;
     }
 
     @PlanningScore

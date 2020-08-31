@@ -6,6 +6,7 @@ import org.optaplanner.core.impl.score.director.easy.EasyScoreCalculator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -40,8 +41,13 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
             Standstill previousStandstill = turbine.getPreviousStandstill();
             if (previousStandstill != null) {
                 Vessel vessel = turbine.getVessel();
-                List<Technician> turbineTechnicians = turbine.getTechnicianList();
-                List<Technician> vesselTechnicians = vessel.getTechnicianList();
+                // List<Technician> turbineTechnicians = turbine.getTechnicianList();
+                // List<Technician> vesselTechnicians = vessel.getTechnicianList();
+                System.out.println("TURBINE DEMAND: " + turbine.getDemand());
+                System.out.println(Arrays.asList(vesselDemandMap));
+                System.out.println("VESSEL:         " + vessel);
+                // logger.debug("{}", turbine.getDemand());
+                // logger.debug("{}", vesselDemandMap);
                 vesselDemandMap.put(vessel, vesselDemandMap.get(vessel) + turbine.getDemand());
                 // Score constraint distanceToPreviousStandstill
                 softScore -= turbine.getDistanceFromPreviousStandstill();
@@ -50,6 +56,7 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
                     softScore -= turbine.getLocation().getDistanceTo(vessel.getLocation());
                 }
 
+                /**
                 for (Technician technicianT : turbineTechnicians){
                     for (Technician technicianV : vesselTechnicians){
                         if (technicianT.getType().equals(technicianV.getType())) {
@@ -62,6 +69,7 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
                         hardScore -= 10;
                     }
                 }
+                 **/
 
                 // if (timeWindowed) {
                 //     TimeWindowedTurbine timeWindowedTurbine = (TimeWindowedTurbine) turbine;

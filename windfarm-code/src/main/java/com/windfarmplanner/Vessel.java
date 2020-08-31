@@ -1,6 +1,7 @@
 package com.windfarmplanner;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
+import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 
 import java.util.List;
@@ -81,10 +82,11 @@ public class Vessel extends AbstractPersistable implements Standstill {
 
     @Override
     public String toString() {
-        Location location = getLocation();
-        if (location.getId() == null) {
-            return super.toString();
-        }
-        return location.getId() + "/" + super.toString();
+        // Location location = getLocation();
+        // if (location.getId() == null) {
+        //     return super.toString();
+        // }
+        // return location.getId() + "/" + super.toString();
+        return "HELLO I AM A VESSEL";
     }
 }

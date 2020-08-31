@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 
 public class App {
 
-    private Route solution;
+    private Route solution = new Route();
     private int turbineListSize;
     private int vesselListSize;
     private int baseListSize;
@@ -121,6 +121,7 @@ public class App {
 
                 this.vesselList.add(vessel);
             }
+            solution.setVesselList(this.vesselList);
             csvReader.close();
 
 
@@ -143,7 +144,7 @@ public class App {
             csvReader.close();
 
 
-            //Technician
+            // technician
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/technician.csv"));
 
             while ((row = csvReader.readLine()) != null) {
@@ -159,6 +160,7 @@ public class App {
                 technician.setBase(base);
 
             }
+            solution.setTechnicianList(this.technicianList);
             csvReader.close();
 
         } catch (IOException e) {

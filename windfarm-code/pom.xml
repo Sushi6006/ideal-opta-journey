@@ -11,7 +11,7 @@
   </parent>
 
   <groupId>com.windfarmplanner</groupId>
-  <artifactId>OptaplannerTest</artifactId>
+  <artifactId>windfarm-code</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <dependencies>
