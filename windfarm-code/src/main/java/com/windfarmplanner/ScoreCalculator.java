@@ -37,17 +37,17 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
         int softScore = 0;
 
         // calculation
-        for (int i = 0; i < turbineList.size(); i++) {
-            // for (Turbine turbine : turbineList) {
-            Turbine turbine = turbineList.get(i);
+//        for (int i = 0; i < turbineList.size(); i++) {
+        for (Turbine turbine : turbineList) {
+//            Turbine turbine = turbineList.get(i);
             Standstill previousStandstill = turbine.getPreviousStandstill();
-            if ((previousStandstill != null) && (false)) {  // i != 0
+            if (previousStandstill != null) {  // i != 0
                 Vessel vessel = turbine.getVessel();
                 // List<Technician> turbineTechnicians = turbine.getTechnicianList();
                 // List<Technician> vesselTechnicians = vessel.getTechnicianList();
                 // logger.debug("{}", turbine.getDemand());
                 // logger.debug("{}", vesselDemandMap);
-                // vesselDemandMap.put(vessel, vesselDemandMap.get(vessel) + turbine.getDemand());
+                 vesselDemandMap.put(vessel, vesselDemandMap.get(vessel) + turbine.getDemand());
                 // Score constraint distanceToPreviousStandstill
                 softScore -= turbine.getDistanceFromPreviousStandstill();
                 if (turbine.getNextTurbine() == null) {
@@ -92,9 +92,9 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
         }
 
         logger.debug("hardscore ({});\n softscore ({});\n", hardScore, softScore);
-        for (Vessel vessel : vesselList){
-            logger.debug("({})", vessel.getTurbineList());
-        }
+//        for (Vessel vessel : vesselList){
+//            logger.debug("({})", vessel.getTurbineList());
+//        }
 
 
         // Score constraint arrivalAfterDueTimeAtDepot is a built-in hard constraint in VesselRoutingImporter

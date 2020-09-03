@@ -1,13 +1,11 @@
 package com.windfarmplanner;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
-import org.optaplanner.core.api.domain.entity.PlanningEntity;
+import com.windfarmplanner.location.Location;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 
-import java.util.List;
 
-
-@XStreamAlias("Vessel")
+@XStreamAlias("WfVessel")
 public class Vessel extends AbstractPersistable implements Standstill {
 
     protected int capacity;

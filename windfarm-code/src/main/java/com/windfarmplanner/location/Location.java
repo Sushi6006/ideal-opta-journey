@@ -1,6 +1,13 @@
-package com.windfarmplanner;
+package com.windfarmplanner.location;
 
-public class Location extends AbstractPersistable {
+
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.windfarmplanner.AbstractPersistable;
+
+@XStreamAlias("WfLocation")
+public abstract class Location extends AbstractPersistable {
+
+    protected String name = "null";
 
     protected double latitude;
     protected double longitude;
@@ -8,18 +15,26 @@ public class Location extends AbstractPersistable {
     public Location() {
     }
 
-    public Location(Long id, double latitude, double longitude) {
+    public Location(long id, double latitude, double longitude) {
         super(id);
         this.latitude = latitude;
         this.longitude = longitude;
     }
 
-    public Long getId() {
-        return id;
+//    public Long getId() {
+//        return id;
+//    }
+//
+//    public void setId(Long id) {
+//        this.id = id;
+//    }
+
+    public String getName() {
+        return name;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public double getLatitude() {
@@ -41,12 +56,14 @@ public class Location extends AbstractPersistable {
     // ************************************************************************
     // Complex methods
     // ************************************************************************
-    public double getDistanceTo(Location location){
-        double latitudeDifference = location.latitude - latitude;
-        double longitudeDifference = location.longitude - longitude;
-        return Math.sqrt(
-                (latitudeDifference * latitudeDifference) + (longitudeDifference * longitudeDifference));
-    }
+    public abstract long getDistanceTo(Location location);
+
+//    public double getDistanceTo(Location location){
+//        double latitudeDifference = location.latitude - latitude;
+//        double longitudeDifference = location.longitude - longitude;
+//        return Math.sqrt(
+//                (latitudeDifference * latitudeDifference) + (longitudeDifference * longitudeDifference));
+//    }
 
     //The angle relative to the direction EAST.
 
@@ -62,7 +79,7 @@ public class Location extends AbstractPersistable {
         if (id == null) {
             return super.toString();
         }
-        return "" + id;
+        return name;
     }
 
 }

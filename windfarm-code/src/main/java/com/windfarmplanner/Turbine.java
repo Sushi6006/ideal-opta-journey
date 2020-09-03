@@ -1,14 +1,11 @@
 package com.windfarmplanner;
 
-import com.windfarmplanner.Location;
-import com.windfarmplanner.Standstill;
+import com.windfarmplanner.location.Location;
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
-import org.optaplanner.core.api.domain.lookup.PlanningId;
+import org.optaplanner.core.api.domain.variable.AnchorShadowVariable;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;
 import org.optaplanner.core.api.domain.variable.PlanningVariableGraphType;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
-
-import java.util.List;
 
 @PlanningEntity
 public class Turbine extends AbstractPersistable implements Standstill {
@@ -19,18 +16,21 @@ public class Turbine extends AbstractPersistable implements Standstill {
     // Planning variables: changes during planning, between score calculations.
     protected Standstill previousStandstill;
 
+    // Shadow variables
     protected Turbine nextTurbine;
     protected Vessel vessel;
-    protected List<Technician> technicianList;
+//    protected List<Technician> technicianList;
 
-    public Turbine() { }
+    public Turbine() {
+    }
 
-    public Turbine(Long id, Location location, int demand) {
+    public Turbine(long id, Location location, int demand) {
         super(id);
         this.location = location;
         this.demand = demand;
     }
 
+    @Override
     public Location getLocation() {
         return location;
     }
@@ -46,18 +46,18 @@ public class Turbine extends AbstractPersistable implements Standstill {
     public void setDemand(int demand) {
         this.demand = demand;
     }
+//
+//    public void setId(Long id) {
+//        this.id = id;
+//    }
+//
+//    public Long getId() {
+//        return id;
+//    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public List getTechnicianList() {return technicianList;}
-
-    public void setTechnicianList(Technician technician) {this.technicianList.add(technician);}
+//    public List getTechnicianList() {return technicianList;}
+//
+//    public void setTechnicianList(Technician technician) {this.technicianList.add(technician);}
 
     @PlanningVariable(valueRangeProviderRefs = { "vesselRange", "turbineRange" }, graphType = PlanningVariableGraphType.CHAINED)
     public Standstill getPreviousStandstill() {
@@ -79,6 +79,7 @@ public class Turbine extends AbstractPersistable implements Standstill {
     }
 
     @Override
+    @AnchorShadowVariable(sourceVariableName = "previousStandstill")
     public Vessel getVessel() {
         return vessel;
     }
@@ -87,8 +88,11 @@ public class Turbine extends AbstractPersistable implements Standstill {
         this.vessel = vessel;
     }
 
+    // ************************************************************************
+    // Complex methods
+    // ************************************************************************
 
-    public double getDistanceFromPreviousStandstill() {
+    public long getDistanceFromPreviousStandstill() {
         if (previousStandstill == null) {
             throw new IllegalStateException("This method must not be called when the previousStandstill ("
                     + previousStandstill + ") is not initialized yet.");
@@ -96,11 +100,11 @@ public class Turbine extends AbstractPersistable implements Standstill {
         return getDistanceFrom(previousStandstill);
     }
 
-    public double getDistanceFrom(Standstill standstill) {
+    public long getDistanceFrom(Standstill standstill) {
         return standstill.getLocation().getDistanceTo(location);
     }
 
-    public double getDistanceTo(Standstill standstill) {
+    public long getDistanceTo(Standstill standstill) {
         return location.getDistanceTo(standstill.getLocation());
     }
 
@@ -109,7 +113,7 @@ public class Turbine extends AbstractPersistable implements Standstill {
         if (location.getId() == null) {
             return super.toString();
         }
-        return "" + location.getId();
+        return location.getName();
     }
 
 }
