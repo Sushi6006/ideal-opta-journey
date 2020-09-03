@@ -1,9 +1,8 @@
 package com.windfarmplanner;
 
-import java.io.Serializable;
 import org.optaplanner.core.api.domain.lookup.PlanningId;
 
-public abstract class AbstractPersistable implements Serializable {
+public abstract class AbstractPersistable {
 
     protected Long id;
 
@@ -23,7 +22,9 @@ public abstract class AbstractPersistable implements Serializable {
         this.id = id;
     }
 
+    @Override
     public String toString() {
         return this.getClass().getName().replaceAll(".*\\.", "") + "-" + this.id;
     }
 }
+

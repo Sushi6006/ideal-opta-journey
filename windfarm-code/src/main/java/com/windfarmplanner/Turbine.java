@@ -11,7 +11,7 @@ import org.optaplanner.examples.common.domain.AbstractPersistable;
 import java.util.List;
 
 @PlanningEntity
-public class Turbine extends AbstractPersistable implements Standstill{
+public class Turbine extends AbstractPersistable implements Standstill {
 
     protected Location location;
     protected int demand;

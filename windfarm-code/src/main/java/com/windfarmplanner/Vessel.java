@@ -14,7 +14,7 @@ public class Vessel extends AbstractPersistable implements Standstill {
     protected Base base;
 
     protected Turbine nextTurbine;
-    protected List<Technician> technicianList;
+    // protected List<Technician> technicianList;
 
     public Vessel() {
     }
@@ -23,14 +23,6 @@ public class Vessel extends AbstractPersistable implements Standstill {
         super(id);
         this.capacity = capacity;
         this.base = base;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public int getCapacity() {
@@ -49,10 +41,13 @@ public class Vessel extends AbstractPersistable implements Standstill {
         this.base = base;
     }
 
-    public List getTechnicianList() {return technicianList;}
+    // public Long getId() {
+    //     return id;
+    // }
 
-    public void addTechnicianList(Technician technician) {this.technicianList.add(technician);}
-    public void removeTechnician(Technician technician) {this.technicianList.remove(technician);}
+    // public void setId(Long id) {
+    //     this.id = id;
+    // }
 
     @Override
     public Turbine getNextTurbine() {
@@ -64,7 +59,21 @@ public class Vessel extends AbstractPersistable implements Standstill {
         this.nextTurbine = nextTurbine;
     }
 
-    public Turbine getTurbineList(){return nextTurbine;}
+    // public List getTechnicianList() {
+    //     return technicianList;
+    // }
+
+    // public void addTechnicianList(Technician technician) {
+    //     this.technicianList.add(technician);
+    // }
+
+    // public void removeTechnician(Technician technician) {
+    //     this.technicianList.remove(technician);
+    // }    
+
+    // public Turbine getTurbineList() {
+    //     return nextTurbine;
+    // }
 
     @Override
     public Vessel getVessel() {
@@ -76,7 +85,7 @@ public class Vessel extends AbstractPersistable implements Standstill {
         return base.getLocation();
     }
 
-    public double getDistanceTo(Standstill standstill) {
+    public long getDistanceTo(Standstill standstill) {
         return base.getDistanceTo(standstill);
     }
 
@@ -87,6 +96,6 @@ public class Vessel extends AbstractPersistable implements Standstill {
         //     return super.toString();
         // }
         // return location.getId() + "/" + super.toString();
-        return "HELLO I AM A VESSEL";
+        return "VESSEL";
     }
 }
