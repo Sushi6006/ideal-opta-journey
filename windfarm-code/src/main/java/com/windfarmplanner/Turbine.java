@@ -101,7 +101,10 @@ public class Turbine extends AbstractPersistable implements Standstill {
     }
 
     public long getDistanceFrom(Standstill standstill) {
-        return standstill.getLocation().getDistanceTo(location);
+        if ((location != null) && (standstill != null) && (standstill.getLocation() != null)) {
+            return standstill.getLocation().getDistanceTo(location);
+        }
+        return 0L;
     }
 
     public long getDistanceTo(Standstill standstill) {

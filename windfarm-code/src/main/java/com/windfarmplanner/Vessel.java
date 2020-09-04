@@ -80,7 +80,10 @@ public class Vessel extends AbstractPersistable implements Standstill {
 
     @Override
     public Location getLocation() {
-        return base.getLocation();
+        if (base != null) {
+            return base.getLocation();
+        }
+        return null;
     }
 
     public long getDistanceTo(Standstill standstill) {

@@ -146,14 +146,16 @@ public class App {
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
 
-                Vessel vessel = new Vessel();
+                // Vessel vessel = new Vessel();
                 Long id = Long.parseLong(data[0]);
-                vessel.setId(id);
-                vessel.setCapacity(Integer.parseInt(data[1]));
+                // vessel.setId(id);
+                // vessel.setCapacity(Integer.parseInt(data[1]));
                 Base base = baseMap.get(id);
-                if (base != null) {
-                    vessel.setBase(base);
-                }
+                // if (base != null) {
+                //     vessel.setBase(base);
+                // }
+                Vessel vessel = new Vessel(id, Integer.parseInt(data[1]), base);
+
                 this.vesselList.add(vessel);
             }
             csvReader.close();

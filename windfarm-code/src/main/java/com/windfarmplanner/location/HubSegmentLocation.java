@@ -1,8 +1,6 @@
 package com.windfarmplanner.location;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
-
-
 import java.util.Map;
 
 @XStreamAlias("WfHubSegmentLocation")
@@ -36,9 +34,14 @@ public class HubSegmentLocation extends Location {
     @Override
     public long getDistanceTo(Location location) {
         double distance;
-        distance = hubTravelDistanceMap.get((HubSegmentLocation) location);
+        try {
+            distance = hubTravelDistanceMap.get((HubSegmentLocation) location);    
+        } catch (Exception e) {
+            distance = 0.0;
+        }
+        
         // Multiplied by 1000 to avoid floating point arithmetic rounding errors
-        return (long) (distance * 1000.0 + 0.5);
+        return (long)(distance * 1000.0 + 0.5);
     }
 
 //    public double getDistanceDouble(RoadSegmentLocation location) {
