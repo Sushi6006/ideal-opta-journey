@@ -9,6 +9,7 @@ import org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty
 import org.optaplanner.core.api.domain.solution.ProblemFactCollectionProperty;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
 import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
+import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
 import org.optaplanner.persistence.xstream.api.score.buildin.hardsoft.HardSoftScoreXStreamConverter;
 
 
@@ -29,7 +30,7 @@ public class Route extends AbstractPersistable{
 //    private List<Technician> technicianList;
 
     @XStreamConverter(HardSoftScoreXStreamConverter.class)
-    private HardSoftScore score;
+    private HardSoftLongScore score;
 
 //    public Route() {
 //    }
@@ -87,11 +88,11 @@ public class Route extends AbstractPersistable{
 //    }
 
     @PlanningScore
-    public HardSoftScore getScore() {
+    public HardSoftLongScore getScore() {
         return score;
     }
 
-    public void setScore(HardSoftScore score) {
+    public void setScore(HardSoftLongScore score) {
         this.score = score;
     }
 
