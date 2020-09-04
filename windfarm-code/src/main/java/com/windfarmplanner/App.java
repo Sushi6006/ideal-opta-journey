@@ -26,10 +26,10 @@ public class App {
     private int hubListSize;
     private int capacity;
     private int baseListSize;
-//    private int technicianListSize;
+    // private int technicianListSize;
     private Map<Long, Location> locationMap;
     private Map<Long, Base> baseMap;
-//    private Map<Long, Technician> technicianMap;
+    // private Map<Long, Technician> technicianMap;
 
     private List<Base> baseList;
     protected List<HubSegmentLocation> hubLocationList = null;
@@ -73,31 +73,31 @@ public class App {
                 else if (data[0]=="base") {
                     baseListSize = Integer.parseInt(data[1]);
                 }
-//                else if (data[0]=="technician") {
-//                    technicianListSize = Integer.parseInt(data[1]);
-//                }
+                // else if (data[0]=="technician") {
+                //     technicianListSize = Integer.parseInt(data[1]);
+                // }
             }
             csvReader.close();
-//            BigInteger a = factorial(turbineListSize + vesselListSize - 1);
-//            BigInteger b = factorial(vesselListSize - 1);
-//            BigInteger possibleSolutionSize = (a == null || b == null) ? null : a.divide(b);
-//            logger.info("VehicleRoutingSolution {} has {} depots, {} vehicles and {} customers with a search space of {}.",
-//                    solution.getBaseList().size(),
-//                    solution.getVehicleList().size(),
-//                    solution.getCustomerList().size(),
-//                    getFlooredPossibleSolutionSize(possibleSolutionSize));
-//            return solution;
-//        }
+            // BigInteger a = factorial(turbineListSize + vesselListSize - 1);
+            // BigInteger b = factorial(vesselListSize - 1);
+            // BigInteger possibleSolutionSize = (a == null || b == null) ? null : a.divide(b);
+            // logger.info("VehicleRoutingSolution {} has {} depots, {} vehicles and {} customers with a search space of {}.",
+            //         solution.getBaseList().size(),
+            //         solution.getVehicleList().size(),
+            //         solution.getCustomerList().size(),
+            //         getFlooredPossibleSolutionSize(possibleSolutionSize));
+            // return solution;
+            // }
 
             baseMap = new LinkedHashMap<>(baseListSize);
             locationMap = new LinkedHashMap<>(hubListSize);
             hubLocationList = new ArrayList<>(hubListSize);
-//            technicianMap = new LinkedHashMap<>(technicianListSize);
+            // technicianMap = new LinkedHashMap<>(technicianListSize);
 
             baseList = new ArrayList<>(baseListSize);
             vesselList = new ArrayList<>(vesselListSize);
             turbineList = new ArrayList<>(turbineListSize);
-//            technicianList = new ArrayList<>(technicianListSize);
+            // technicianList = new ArrayList<>(technicianListSize);
 
             // location
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/location.csv"));
@@ -131,7 +131,7 @@ public class App {
                 long id = Long.parseLong(data[0]);
                 base.setId(id);
                 Location location = locationMap.get(id);
-//                System.out.println("location:" + location);
+                // System.out.println("location:" + location);
                 base.setLocation(location);
                 baseList.add(base);
                 baseMap.put(base.getId(),base);
@@ -180,25 +180,24 @@ public class App {
             csvReader.close();
             solution.setTurbineList(this.turbineList);
 
-//
-//            // technician
-//            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/technician.csv"));
-//
-//            while ((row = csvReader.readLine()) != null) {
-//                String[] data = row.split(",");
-//                Technician technician = new Technician();
-//                Long id = Long.parseLong(data[0]);
-//                technician.setId(id);
-//                technician.setType(data[1]);
-//
-//                this.technicianList.add(technician);
-//                technicianMap.put(technician.getId(), technician);
-//                Base base = baseMap.get(id);
-//                technician.setBase(base);
-//
-//            }
-//            solution.setTechnicianList(this.technicianList);
-//            csvReader.close();
+            // // technician
+            // csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/technician.csv"));
+
+            // while ((row = csvReader.readLine()) != null) {
+            //     String[] data = row.split(",");
+            //     Technician technician = new Technician();
+            //     Long id = Long.parseLong(data[0]);
+            //     technician.setId(id);
+            //     technician.setType(data[1]);
+
+            //     this.technicianList.add(technician);
+            //     technicianMap.put(technician.getId(), technician);
+            //     Base base = baseMap.get(id);
+            //     technician.setBase(base);
+
+            // }
+            // solution.setTechnicianList(this.technicianList);
+            // csvReader.close();
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -212,19 +211,19 @@ public class App {
         Solver<Route> solver = solverFactory.buildSolver();
 
         // Load a problem with given data
-//        logger.info("Load problem with dataset");
-//        Route unsolvedRoute = this.createRoute();
+        // logger.info("Load problem with dataset");
+        // Route unsolvedRoute = this.createRoute();
 
         // Solve the problem
         logger.info("Solving");
-//        Route solvedRoute = solver.solve(solution);
+        // Route solvedRoute = solver.solve(solution);
         solver.solve(solution);
         logger.info("Done.");
     }
 
 
-//    private Route createRoute() {
-//        return new Route(this.vesselList, this.turbineList);
-//    }
+    // private Route createRoute() {
+    //     return new Route(this.vesselList, this.turbineList);
+    // }
 
 }
