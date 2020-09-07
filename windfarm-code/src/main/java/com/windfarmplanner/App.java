@@ -14,7 +14,6 @@ import org.optaplanner.core.api.solver.Solver;
 import org.optaplanner.core.api.solver.SolverFactory;
 import com.windfarmplanner.location.Location;
 import com.windfarmplanner.location.HubSegmentLocation;
-import org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -188,17 +187,14 @@ public class App {
 
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
-
                 for (int i = 0; i < turbineListSize; i++) {
                     Distance roadLocation = (Distance) turbineLocationList.get(i);
                     Map<Distance, Double> travelDistanceMap = new LinkedHashMap<>(turbineListSize);
-
                     for (int j = 0; j < turbineListSize; j++) {
                         double travelDistance = Double.parseDouble(data[j]);
                         if (i == j) {
                             if (travelDistance != 0.0) {
-                                throw new IllegalStateException("The travelDistance (" + travelDistance
-                                        + ") should be zero.");
+                                throw new IllegalStateException("The travelDistance (" + travelDistance + ") should be zero.");
                             }
                         } else {
                             Distance otherLocation = (Distance) turbineLocationList.get(j);
