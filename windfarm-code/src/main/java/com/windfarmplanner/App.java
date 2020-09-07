@@ -183,7 +183,7 @@ public class App {
             solution.setTurbineList(this.turbineList);
 
 
-            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/distance.csv"));
+            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/distancemap.csv"));
 
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
