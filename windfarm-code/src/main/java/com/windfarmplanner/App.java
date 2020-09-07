@@ -62,19 +62,19 @@ public class App {
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/sizes.csv"));
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
-                if (data[0]=="turbine") {
+                if (data[0] == "turbine") {
                     turbineListSize = Integer.parseInt(data[1]);
                 }
-                else if (data[0]=="vessel") {
+                else if (data[0] == "vessel") {
                     vesselListSize = Integer.parseInt(data[1]);
                 }
-                else if (data[0]=="location"){
+                else if (data[0] == "location"){
                     hubListSize = Integer.parseInt(data[1]);
                 }
-                else if (data[0]=="base") {
+                else if (data[0] == "base") {
                     baseListSize = Integer.parseInt(data[1]);
                 }
-                // else if (data[0]=="technician") {
+                // else if (data[0] == "technician") {
                 //     technicianListSize = Integer.parseInt(data[1]);
                 // }
             }
