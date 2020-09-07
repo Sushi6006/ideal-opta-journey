@@ -15,7 +15,7 @@ import java.util.Map;
 public class ScoreCalculator implements EasyScoreCalculator<Route> {
 
     protected final transient Logger logger = LoggerFactory.getLogger(getClass());
-//    protected Technician technician;
+    // protected Technician technician;
 
     @Override
     public HardSoftLongScore calculateScore(Route route) {
