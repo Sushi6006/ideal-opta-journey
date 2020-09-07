@@ -9,10 +9,12 @@ import java.util.Map;
 import java.util.*;
 import java.lang.Integer;
 
+import com.windfarmplanner.location.Distance;
 import org.optaplanner.core.api.solver.Solver;
 import org.optaplanner.core.api.solver.SolverFactory;
 import com.windfarmplanner.location.Location;
 import com.windfarmplanner.location.HubSegmentLocation;
+import org.optaplanner.examples.vehiclerouting.domain.location.RoadLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -164,7 +166,7 @@ public class App {
 
             // turbines
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/turbine.csv"));
-
+            List<Location> turbineLocationList = new ArrayList<>(turbineListSize);
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
 
@@ -173,12 +175,39 @@ public class App {
                 turbine.setId(id);
                 Location location = locationMap.get(id);
                 turbine.setLocation(location);
+                turbineLocationList.add(location);
                 turbine.setDemand(Integer.parseInt(data[1]));
                 // turbine.setTechnicianList(data[3]);
                 turbineList.add(turbine);
             }
             csvReader.close();
             solution.setTurbineList(this.turbineList);
+
+
+            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/distance.csv"));
+
+            while ((row = csvReader.readLine()) != null) {
+                String[] data = row.split(",");
+
+                for (int i = 0; i < turbineListSize; i++) {
+                    Distance roadLocation = (Distance) turbineLocationList.get(i);
+                    Map<Distance, Double> travelDistanceMap = new LinkedHashMap<>(turbineListSize);
+
+                    for (int j = 0; j < turbineListSize; j++) {
+                        double travelDistance = Double.parseDouble(data[j]);
+                        if (i == j) {
+                            if (travelDistance != 0.0) {
+                                throw new IllegalStateException("The travelDistance (" + travelDistance
+                                        + ") should be zero.");
+                            }
+                        } else {
+                            Distance otherLocation = (Distance) turbineLocationList.get(j);
+                            travelDistanceMap.put(otherLocation, travelDistance);
+                        }
+                    }
+                    roadLocation.setTravelDistanceMap(travelDistanceMap);
+                }
+            }
 
             // // technician
             // csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/technician.csv"));

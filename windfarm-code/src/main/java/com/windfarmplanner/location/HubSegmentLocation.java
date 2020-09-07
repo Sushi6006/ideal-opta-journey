@@ -15,6 +15,11 @@ public class HubSegmentLocation extends Location {
         super(id, latitude, longitude);
     }
 
+//    @Override
+//    public long getDistanceTo(Location location) {
+//        return 0;
+//    }
+
 //    public Map<RoadSegmentLocation, Double> getNearbyTravelDistanceMap() {
 //        return nearbyTravelDistanceMap;
 //    }
@@ -36,8 +41,8 @@ public class HubSegmentLocation extends Location {
         double distance;
         System.out.println("hubTravelDistanceMap: " + hubTravelDistanceMap);
         System.out.println("location: " + location);
-        distance = hubTravelDistanceMap.get((HubSegmentLocation) location);    
-        
+        distance = hubTravelDistanceMap.get((HubSegmentLocation) location);
+
         // Multiplied by 1000 to avoid floating point arithmetic rounding errors
         return (long)(distance * 1000.0 + 0.5);
     }
