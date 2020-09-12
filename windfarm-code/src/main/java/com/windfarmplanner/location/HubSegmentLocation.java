@@ -28,7 +28,7 @@ public class HubSegmentLocation extends Location {
 //        this.nearbyTravelDistanceMap = nearbyTravelDistanceMap;
 //    }
 
-    public Map<HubSegmentLocation, Double> getHubTravelDistanceMap() {
+    public Map<HubSegmentL  ocation, Double> getHubTravelDistanceMap() {
         return hubTravelDistanceMap;
     }
 
