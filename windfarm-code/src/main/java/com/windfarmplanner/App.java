@@ -191,22 +191,21 @@ public class App {
                     Map<HubSegmentLocation, Double> hubTravelDistanceMap = new LinkedHashMap<>(hubListSize);
                     for (int j = 0; j < hubListSize; j++) {
                         double travelDistance = Double.parseDouble(data[j]);
-//                        double travelDistanceHub = Double.parseDouble(data[j]);
-//                        if (i == j) {
-//                            if (travelDistance != 0.0) {
-//                                throw new IllegalStateException("The travelDistance (" + travelDistance + ") should be zero.");
-//                            }
-//                        } else {
-//                            Distance otherLocation = (Distance) turbineLocationList.get(j);
-//                            travelDistanceMap.put(otherLocation, travelDistance);
+                        // double travelDistanceHub = Double.parseDouble(data[j]);
+                        // if (i == j) {
+                        //     if (travelDistance != 0.0) {
+                        //         throw new IllegalStateException("The travelDistance (" + travelDistance + ") should be zero.");
+                        //     }
+                        // } else {
+                        //     Distance otherLocation = (Distance) turbineLocationList.get(j);
+                        //     travelDistanceMap.put(otherLocation, travelDistance);
                         HubSegmentLocation otherHubLocation = hubLocationList.get(j);
                         hubTravelDistanceMap.put(otherHubLocation, travelDistance);
-//                        }
                     }
-//                    roadLocation.setTravelDistanceMap(travelDistanceMap);
+                    // roadLocation.setTravelDistanceMap(travelDistanceMap);
                     hubSegmentLocation.setHubTravelDistanceMap(hubTravelDistanceMap);
-//                    System.out.println("app setTravelDistanceMap: "+travelDistanceMap);
-                    System.out.println("app setHubTravelDistanceMap: "+hubTravelDistanceMap);
+                    // System.out.println("app setTravelDistanceMap: "+travelDistanceMap);
+                    // System.out.println("app setHubTravelDistanceMap: "+hubTravelDistanceMap);
                 }
             }
 

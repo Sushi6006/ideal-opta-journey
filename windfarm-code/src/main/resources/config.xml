@@ -17,7 +17,8 @@
 
     <!-- Optimization algorithms configuration -->
     <termination>
-        <secondsSpentLimit>300</secondsSpentLimit>
+        <!-- <secondsSpentLimit>300</secondsSpentLimit> -->
+        <millisecondsSpentLimit>50</millisecondsSpentLimit>
     </termination>
 
 </solver>

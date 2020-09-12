@@ -1,47 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312c907-7fff-47de-a0fb-3ffdb584b86b" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="3312c907-7fff-47de-a0fb-3ffdb584b86b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/src/main/java/com/windfarmplanner/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/src/main/java/com/windfarmplanner/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/src/main/java/com/windfarmplanner/location/HubSegmentLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/src/main/java/com/windfarmplanner/location/HubSegmentLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/src/main/resources/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/com/windfarmplanner/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/com/windfarmplanner/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/com/windfarmplanner/Turbine.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/com/windfarmplanner/Turbine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/com/windfarmplanner/location/HubSegmentLocation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/com/windfarmplanner/location/HubSegmentLocation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/config.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="565359954">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -49,80 +30,69 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Course" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="optaplanner-examples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="optaplanner-examples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="optaplanner-examples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-            <path>
-              <item name="optaplanner-examples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
-            </path>
-            <path>
-              <item name="optaplanner-examples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
-              <item name="data" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
-            </path>
-            <path>
-              <item name="optaplanner-examples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-              <item name="com.intellij.database" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
-              <item name="schema" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1hPZajF6JyJL8sKxmsZnUY5xmEf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1596370570011" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RunManager" selected="Application.VehicleRoutingApp">
+    <configuration name="VehicleRoutingApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.optaplanner.examples.vehiclerouting.app.VehicleRoutingApp" />
+      <module name="optaplanner-examples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.optaplanner.examples.vehiclerouting.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehicleRoutingDistanceTypeComparison" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.optaplanner.examples.vehiclerouting.persistence.util.VehicleRoutingDistanceTypeComparison" />
+      <module name="optaplanner-examples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.optaplanner.examples.vehiclerouting.persistence.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <item itemvalue="Application.VehicleRoutingApp" />
+        <item itemvalue="Application.VehicleRoutingDistanceTypeComparison" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -140,67 +110,41 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="651000" />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Educational.CheckDetails" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="424" y="213" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599915294128">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="424" y="213" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1599915294128" />
+    <state x="697" y="360" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599915159083">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="697" y="360" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1599915159083" />
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1599916254175">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1599916254175" />
+    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1599916254175">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1599916254175" />
+    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1599916254174">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1599916254174" />
+    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1599916254175">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1599916254175" />
+    <state x="498" y="213" key="Maven.ArtifactSearchDialog" timestamp="1599915206606">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="498" y="213" key="Maven.ArtifactSearchDialog/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1599915206606" />
+    <state x="448" y="133" key="SettingsEditor" timestamp="1599915340744">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="448" y="133" key="SettingsEditor/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1599915340744" />
   </component>
 </project>
