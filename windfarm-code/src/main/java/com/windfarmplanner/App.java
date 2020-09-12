@@ -39,39 +39,46 @@ public class App {
     protected List<HubSegmentLocation> locationList;
 //    protected List<Technician> technicianList;
 
-    protected final transient Logger logger = LoggerFactory.getLogger(getClass());
+//    protected final transient Logger logger = LoggerFactory.getLogger(getClass());
 
 
     public static void main(String[] args) {
 
         // import data
         App app = new App();
+        System.out.println("read");
         app.read_data();
-
+        System.out.println("read end");
         app.solve();
     }
 
 
     public void read_data() {
+        Logger logger = LoggerFactory.getLogger(getClass());
         String row;
         BufferedReader csvReader = null;
 
-        logger.info("loading data");
+        System.out.println("loading data");
         try {
+            // technicianList = new ArrayList<>(technicianListSize);
+
             //size for variables
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/sizes.csv"));
             while ((row = csvReader.readLine()) != null) {
+                System.out.println("sizes");
                 String[] data = row.split(",");
-                if (data[0] == "turbine") {
+                if (data[0].equals("turbine")) {
                     turbineListSize = Integer.parseInt(data[1]);
+                    System.out.println("turbine"+turbineListSize);
                 }
-                else if (data[0] == "vessel") {
+                else if (data[0].equals("vessel")) {
                     vesselListSize = Integer.parseInt(data[1]);
                 }
-                else if (data[0] == "location"){
+                else if (data[0].equals("location")) {
                     hubListSize = Integer.parseInt(data[1]);
+                    System.out.println("hub"+hubListSize);
                 }
-                else if (data[0] == "base") {
+                else if (data[0].equals("base")) {
                     baseListSize = Integer.parseInt(data[1]);
                 }
                 // else if (data[0] == "technician") {
@@ -79,16 +86,6 @@ public class App {
                 // }
             }
             csvReader.close();
-            // BigInteger a = factorial(turbineListSize + vesselListSize - 1);
-            // BigInteger b = factorial(vesselListSize - 1);
-            // BigInteger possibleSolutionSize = (a == null || b == null) ? null : a.divide(b);
-            // logger.info("VehicleRoutingSolution {} has {} depots, {} vehicles and {} customers with a search space of {}.",
-            //         solution.getBaseList().size(),
-            //         solution.getVehicleList().size(),
-            //         solution.getCustomerList().size(),
-            //         getFlooredPossibleSolutionSize(possibleSolutionSize));
-            // return solution;
-            // }
 
             baseMap = new LinkedHashMap<>(baseListSize);
             locationMap = new LinkedHashMap<>(hubListSize);
@@ -98,7 +95,6 @@ public class App {
             baseList = new ArrayList<>(baseListSize);
             vesselList = new ArrayList<>(vesselListSize);
             turbineList = new ArrayList<>(turbineListSize);
-            // technicianList = new ArrayList<>(technicianListSize);
 
             // location
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/location.csv"));
@@ -186,22 +182,31 @@ public class App {
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/distancemap.csv"));
 
             while ((row = csvReader.readLine()) != null) {
+                System.out.println(hubListSize);
                 String[] data = row.split(",");
-                for (int i = 0; i < turbineListSize; i++) {
-                    Distance roadLocation = (Distance) turbineLocationList.get(i);
-                    Map<Distance, Double> travelDistanceMap = new LinkedHashMap<>(turbineListSize);
-                    for (int j = 0; j < turbineListSize; j++) {
+                for (int i = 0; i < hubListSize; i++) {
+//                    Distance roadLocation = (Distance) turbineLocationList.get(i);
+                    HubSegmentLocation hubSegmentLocation = locationList.get(i);
+//                    Map<Distance, Double> travelDistanceMap = new LinkedHashMap<>(turbineListSize);
+                    Map<HubSegmentLocation, Double> hubTravelDistanceMap = new LinkedHashMap<>(hubListSize);
+                    for (int j = 0; j < hubListSize; j++) {
                         double travelDistance = Double.parseDouble(data[j]);
-                        if (i == j) {
-                            if (travelDistance != 0.0) {
-                                throw new IllegalStateException("The travelDistance (" + travelDistance + ") should be zero.");
-                            }
-                        } else {
-                            Distance otherLocation = (Distance) turbineLocationList.get(j);
-                            travelDistanceMap.put(otherLocation, travelDistance);
-                        }
+//                        double travelDistanceHub = Double.parseDouble(data[j]);
+//                        if (i == j) {
+//                            if (travelDistance != 0.0) {
+//                                throw new IllegalStateException("The travelDistance (" + travelDistance + ") should be zero.");
+//                            }
+//                        } else {
+//                            Distance otherLocation = (Distance) turbineLocationList.get(j);
+//                            travelDistanceMap.put(otherLocation, travelDistance);
+                        HubSegmentLocation otherHubLocation = hubLocationList.get(j);
+                        hubTravelDistanceMap.put(otherHubLocation, travelDistance);
+//                        }
                     }
-                    roadLocation.setTravelDistanceMap(travelDistanceMap);
+//                    roadLocation.setTravelDistanceMap(travelDistanceMap);
+                    hubSegmentLocation.setHubTravelDistanceMap(hubTravelDistanceMap);
+//                    System.out.println("app setTravelDistanceMap: "+travelDistanceMap);
+                    System.out.println("app setHubTravelDistanceMap: "+hubTravelDistanceMap);
                 }
             }
 
@@ -230,6 +235,7 @@ public class App {
     }
 
     public void solve(){
+        Logger logger = LoggerFactory.getLogger(getClass());
         // Build the Solver
         logger.info("Build solver");
         SolverFactory<Route> solverFactory = SolverFactory.createFromXmlResource("config.xml");
