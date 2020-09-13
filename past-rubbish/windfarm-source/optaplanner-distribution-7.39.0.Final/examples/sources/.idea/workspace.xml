@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3312c907-7fff-47de-a0fb-3ffdb584b86b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/src/main/java/com/windfarmplanner/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/src/main/java/com/windfarmplanner/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/src/main/java/com/windfarmplanner/location/HubSegmentLocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/src/main/java/com/windfarmplanner/location/HubSegmentLocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/src/main/resources/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/com/windfarmplanner/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/com/windfarmplanner/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/com/windfarmplanner/Turbine.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/com/windfarmplanner/Turbine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/com/windfarmplanner/location/HubSegmentLocation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/com/windfarmplanner/location/HubSegmentLocation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../windfarm-code/target/classes/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../docs/2020-09-12.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../docs/2020-09-12.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +27,6 @@
         <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
       </MavenGeneralSettings>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
   </component>
   <component name="ProjectId" id="1hPZajF6JyJL8sKxmsZnUY5xmEf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
