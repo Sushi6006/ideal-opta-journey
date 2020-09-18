@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+
 package org.optaplanner.examples.vehiclerouting.persistence.util;
 
 import java.io.File;
