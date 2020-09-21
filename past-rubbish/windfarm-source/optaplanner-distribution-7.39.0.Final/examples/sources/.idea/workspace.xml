@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3312c907-7fff-47de-a0fb-3ffdb584b86b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/persistence/util/VehicleRoutingDistanceTypeComparison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/optaplanner/examples/vehiclerouting/persistence/util/VehicleRoutingDistanceTypeComparison.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.VehicleRoutingApp">
+  <component name="RunManager" selected="Application.VehicleRoutingDistanceTypeComparison">
     <configuration name="VehicleRoutingApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.optaplanner.examples.vehiclerouting.app.VehicleRoutingApp" />
       <module name="optaplanner-examples" />
@@ -75,8 +74,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.VehicleRoutingApp" />
         <item itemvalue="Application.VehicleRoutingDistanceTypeComparison" />
+        <item itemvalue="Application.VehicleRoutingApp" />
       </list>
     </recent_temporary>
   </component>
@@ -110,22 +109,38 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="697" y="360" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1599915159083" />
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1600141758243">
+    <state width="1878" height="358" key="GridCell.Tab.0.bottom" timestamp="1600689349020">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1600141758243" />
-    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1600141758241">
+    <state width="1878" height="358" key="GridCell.Tab.0.bottom/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1600689349020" />
+    <state width="1878" height="358" key="GridCell.Tab.0.center" timestamp="1600689349019">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1600141758241" />
-    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1600141758239">
+    <state width="1878" height="358" key="GridCell.Tab.0.center/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1600689349019" />
+    <state width="1878" height="358" key="GridCell.Tab.0.left" timestamp="1600689349019">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1600141758239" />
-    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1600141758241">
+    <state width="1878" height="358" key="GridCell.Tab.0.left/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1600689349019" />
+    <state width="1878" height="358" key="GridCell.Tab.0.right" timestamp="1600689349020">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1600141758241" />
+    <state width="1878" height="358" key="GridCell.Tab.0.right/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1600689349020" />
+    <state width="1878" height="358" key="GridCell.Tab.1.bottom" timestamp="1600689349021">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.1.bottom/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1600689349021" />
+    <state width="1878" height="358" key="GridCell.Tab.1.center" timestamp="1600689349021">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.1.center/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1600689349021" />
+    <state width="1878" height="358" key="GridCell.Tab.1.left" timestamp="1600689349020">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.1.left/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1600689349020" />
+    <state width="1878" height="358" key="GridCell.Tab.1.right" timestamp="1600689349021">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.1.right/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1600689349021" />
     <state x="498" y="213" key="Maven.ArtifactSearchDialog" timestamp="1599915206606">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -134,5 +149,9 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="448" y="133" key="SettingsEditor/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1599915340744" />
+    <state x="1173" y="180" width="670" height="676" key="search.everywhere.popup" timestamp="1600689338353">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1173" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057/-1792.85.1792.1097@0.23.1920.1057" timestamp="1600689338353" />
   </component>
 </project>
