@@ -37,9 +37,9 @@ public class App {
     protected List<Vessel> vesselList;
     protected List<Turbine> turbineList;
     protected List<HubSegmentLocation> locationList;
-//    protected List<Technician> technicianList;
+    // protected List<Technician> technicianList;
 
-//    protected final transient Logger logger = LoggerFactory.getLogger(getClass());
+    // protected final transient Logger logger = LoggerFactory.getLogger(getClass());
 
 
     public static void main(String[] args) {

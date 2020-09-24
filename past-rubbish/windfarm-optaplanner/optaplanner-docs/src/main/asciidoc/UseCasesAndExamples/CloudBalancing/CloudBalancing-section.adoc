@@ -1,5 +1,0 @@
-[[cloudBalancing]]
-= Cloud balancing
-:imagesdir: ../..
-
-This example is explained in <<cloudBalancingTutorial,a tutorial>>.
