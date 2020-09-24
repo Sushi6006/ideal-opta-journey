@@ -185,9 +185,9 @@ public class App {
                 System.out.println(hubListSize);
                 String[] data = row.split(",");
                 for (int i = 0; i < hubListSize; i++) {
-//                    Distance roadLocation = (Distance) turbineLocationList.get(i);
+                    // Distance roadLocation = (Distance) turbineLocationList.get(i);
                     HubSegmentLocation hubSegmentLocation = locationList.get(i);
-//                    Map<Distance, Double> travelDistanceMap = new LinkedHashMap<>(turbineListSize);
+                    // Map<Distance, Double> travelDistanceMap = new LinkedHashMap<>(turbineListSize);
                     Map<HubSegmentLocation, Double> hubTravelDistanceMap = new LinkedHashMap<>(hubListSize);
                     for (int j = 0; j < hubListSize; j++) {
                         double travelDistance = Double.parseDouble(data[j]);
