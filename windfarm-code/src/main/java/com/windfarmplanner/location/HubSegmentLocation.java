@@ -35,22 +35,21 @@ public class HubSegmentLocation extends Location {
 
     @Override
     public long getDistanceTo(Location location) {
-        // double distance;
+         double distance;
         // System.out.println("hubTravelDistanceMap: " + hubTravelDistanceMap);
         // System.out.println("location: " + location);
 
         // return (long)Math.sqrt(Math.pow(this.getLatitude() - 10, 2) + Math.pow(this.getLongitude() - 4, 2));
 
-        // distance = hubTravelDistanceMap.get(location);
-        // if (location != null) {
+         if (location != null) {
+             distance = hubTravelDistanceMap.get(location);
+             // Multiplied by 1000 to avoid floating point arithmetic rounding errors
+             return (long) (distance * 1000.0 + 0.5);
+         }
+         return (0L);
 
-        //     // Multiplied by 1000 to avoid floating point arithmetic rounding errors
-        //     return (long) (distance * 1000.0 + 0.5);
-        // }
-        // return (0L);
-
-        double distance = hubTravelDistanceMap.get(location);
-        return (long) (distance * 1000.0 + 0.5);
+//        double distance = hubTravelDistanceMap.get(location);
+//        return (long) (distance * 1000.0 + 0.5);
 
     }
 

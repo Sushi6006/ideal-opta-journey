@@ -13,21 +13,29 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.optaplanner:optaplanner-core:8.0.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: org.kie.kogito:kogito-api:0.12.0" level="project" />
-    <orderEntry type="library" name="Maven: org.kie:kie-dmn-api:7.39.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.kie:kie-dmn-model:7.39.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.kie.kogito:kogito-internal:0.12.0" level="project" />
-    <orderEntry type="library" name="Maven: org.kie.kogito:kogito-drools-model:0.12.0" level="project" />
-    <orderEntry type="library" name="Maven: org.kie.kogito:drools-core:0.12.0" level="project" />
-    <orderEntry type="library" name="Maven: org.kie.kogito:kogito-services:0.12.0" level="project" />
-    <orderEntry type="library" name="Maven: org.kie.kogito:drools-core-reflective:0.12.0" level="project" />
-    <orderEntry type="library" name="Maven: org.mvel:mvel2:2.4.8.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.kogito:kogito-api:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.4" level="project" />
+    <orderEntry type="library" name="Maven: org.kie:kie-dmn-api:7.43.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.kie:kie-dmn-model:7.43.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.kogito:kogito-timer:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kie:kie-pmml-evaluator-api:7.43.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.kie:kie-pmml-commons:7.43.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.kogito:kogito-internal:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.kogito:kogito-drools-model:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.kogito:drools-core:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.drools:drools-core:7.39.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.kie.soup:kie-soup-xstream:7.39.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.6.1" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.kie.kogito:drools-compiler:0.12.0" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.soup:kie-soup-project-datamodel-commons:7.39.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.soup:kie-soup-project-datamodel-api:7.39.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.kogito:kogito-services:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.kogito:drools-core-static:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.kie.kogito:drools-compiler:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.drools:drools-compiler:7.39.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.kie.soup:kie-soup-commons:7.39.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.antlr:antlr-runtime:3.5.2" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.eclipse.jdt:ecj:3.19.0" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.kie.kogito:drools-core-dynamic:0.12.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.6.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.kie.kogito:drools-core-dynamic:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.drools:drools-core-reflective:7.39.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.9" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-math3:3.4.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.26" level="project" />
@@ -46,26 +54,19 @@
     <orderEntry type="library" name="Maven: org.optaplanner:optaplanner-persistence-jackson:7.39.0.Final" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.10.4" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.10.4" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.4" level="project" />
     <orderEntry type="library" name="Maven: org.optaplanner:optaplanner-persistence-jsonb:7.39.0.Final" level="project" />
     <orderEntry type="library" name="Maven: jakarta.json.bind:jakarta.json.bind-api:1.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish:jakarta.json:1.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.optaplanner:optaplanner-benchmark:7.39.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.drools:drools-core:7.39.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.drools:drools-core-dynamic:7.39.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.kie.soup:kie-soup-project-datamodel-commons:7.39.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.kie.soup:kie-soup-project-datamodel-api:7.39.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.28" level="project" />
     <orderEntry type="library" name="Maven: org.kie:kie-api:7.39.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.kie.soup:kie-soup-maven-support:7.39.0.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.drools:drools-decisiontables:7.39.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.drools:drools-compiler:7.39.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.kie.soup:kie-soup-commons:7.39.0.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.drools:drools-templates:7.39.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.kie:kie-internal:7.39.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.drools:drools-canonical-model:7.39.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.drools:drools-model-compiler:7.39.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.drools:drools-core-reflective:7.39.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.mvel:mvel2:2.4.8.Final" level="project" />
     <orderEntry type="library" name="Maven: com.github.javaparser:javaparser-core:3.13.10" level="project" />
     <orderEntry type="library" name="Maven: org.drools:drools-mvel-parser:7.39.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.drools:drools-mvel-compiler:7.39.0.Final" level="project" />

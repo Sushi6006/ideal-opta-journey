@@ -47,10 +47,12 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
                 // List<Technician> vesselTechnicians = vessel.getTechnicianList();
                 // logger.debug("{}", turbine.getDemand());
                 // logger.debug("{}", vesselDemandMap);
-                vesselDemandMap.put(vessel, vesselDemandMap.get(vessel) + turbine.getDemand());
+                if (vessel != null) {
+                    vesselDemandMap.put(vessel, vesselDemandMap.get(vessel) + turbine.getDemand());
+                }
                 // Score constraint distanceToPreviousStandstill
                 softScore -= turbine.getDistanceFromPreviousStandstill();
-                if (turbine.getNextTurbine() == null) {
+                if (turbine.getNextTurbine() == null && turbine.getLocation() != null && vessel != null) {
                     // Score constraint distanceFromLastTurbineToDepot
                     softScore -= turbine.getLocation().getDistanceTo(vessel.getLocation());
                 }
