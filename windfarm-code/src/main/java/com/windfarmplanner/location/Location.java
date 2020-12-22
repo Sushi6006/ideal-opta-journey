@@ -58,12 +58,12 @@ public abstract class Location extends AbstractPersistable {
     // ************************************************************************
     public abstract long getDistanceTo(Location location);
 
-//    public double getDistanceTo(Location location){
-//        double latitudeDifference = location.latitude - latitude;
-//        double longitudeDifference = location.longitude - longitude;
-//        return Math.sqrt(
-//                (latitudeDifference * latitudeDifference) + (longitudeDifference * longitudeDifference));
-//    }
+    // public double getDistanceTo(Location location){
+    //     double latitudeDifference = location.latitude - latitude;
+    //     double longitudeDifference = location.longitude - longitude;
+    //     return Math.sqrt(
+    //             (latitudeDifference * latitudeDifference) + (longitudeDifference * longitudeDifference));
+    // }
 
     //The angle relative to the direction EAST.
 
