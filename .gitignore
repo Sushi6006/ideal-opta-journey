@@ -1,11 +1,14 @@
+# system files
 .DS_Store
-
-/.metadata/
+.metadata
 .idea
 .settings
+.vscode
 
+windfarm-code/.idea
+windfarm-code/.settings
+windfarm-code/.vscode
+
+# makefiles
 windfarm-code/makefile
-
-past-rubbish/
-
 makefile
