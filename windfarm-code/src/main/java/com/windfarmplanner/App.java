@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.*;
 import java.lang.Integer;
 
-import com.windfarmplanner.location.Distance;
+// import com.windfarmplanner.location.Distance;
 import org.optaplanner.core.api.solver.Solver;
 import org.optaplanner.core.api.solver.SolverFactory;
 import com.windfarmplanner.location.Location;
@@ -25,7 +25,7 @@ public class App {
     private int turbineListSize;
     private int vesselListSize;
     private int hubListSize;
-    private int capacity;
+    // private int capacity;
     private int baseListSize;
     // private int technicianListSize;
     private Map<Long, Location> locationMap;
@@ -54,7 +54,7 @@ public class App {
 
 
     public void read_data() {
-        Logger logger = LoggerFactory.getLogger(getClass());
+        // Logger logger = LoggerFactory.getLogger(getClass());
         String row;
         BufferedReader csvReader = null;
 
@@ -65,18 +65,18 @@ public class App {
             //size for variables
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/sizes.csv"));
             while ((row = csvReader.readLine()) != null) {
-//                System.out.println("sizes");
+                // System.out.println("sizes");
                 String[] data = row.split(",");
                 if (data[0].equals("turbine")) {
                     turbineListSize = Integer.parseInt(data[1]);
-//                    System.out.println("turbine"+turbineListSize);
+                    // System.out.println("turbine"+turbineListSize);
                 }
                 else if (data[0].equals("vessel")) {
                     vesselListSize = Integer.parseInt(data[1]);
                 }
                 else if (data[0].equals("location")) {
                     hubListSize = Integer.parseInt(data[1]);
-//                    System.out.println("hub"+hubListSize);
+                    // System.out.println("hub"+hubListSize);
                 }
                 else if (data[0].equals("base")) {
                     baseListSize = Integer.parseInt(data[1]);
@@ -176,15 +176,18 @@ public class App {
                 // turbine.setTechnicianList(data[3]);
                 turbineList.add(turbine);
             }
-            for (int i = 0; i < baseList.size(); i++){
-                baseList.get(i).setNextTurbine(turbineList.get(i));
-                Standstill pre = baseList.get(i);
-                turbineList.get(i).setPreviousStandstill(pre);
-            }
-            for (int i = baseList.size() ; i < turbineList.size(); i++){
-                turbineList.get(i).setPreviousStandstill(turbineList.get(i-1));
-                turbineList.get(i-1).setNextTurbine(turbineList.get(i));
-            }
+
+            // MANUALLY INITIALISING SOLUTIONS FOR LS
+            // for (int i = 0; i < baseList.size(); i++){
+            //     baseList.get(i).setNextTurbine(turbineList.get(i));
+            //     Standstill pre = baseList.get(i);
+            //     turbineList.get(i).setPreviousStandstill(pre);
+            // }
+            // for (int i = baseList.size() ; i < turbineList.size(); i++){
+            //     turbineList.get(i).setPreviousStandstill(turbineList.get(i-1));
+            //     turbineList.get(i-1).setNextTurbine(turbineList.get(i));
+            // }
+
             csvReader.close();
             solution.setTurbineList(this.turbineList);
             solution.setBaseList(baseList);
@@ -193,7 +196,7 @@ public class App {
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/distancemap.csv"));
 
             while ((row = csvReader.readLine()) != null) {
-//                System.out.println(hubListSize);
+                // System.out.println(hubListSize);
                 String[] data = row.split(",");
                 for (int i = 0; i < hubListSize; i++) {
                     // Distance roadLocation = (Distance) turbineLocationList.get(i);
@@ -220,7 +223,7 @@ public class App {
                 }
             }
 
-            // // technician
+            // TECHNICIAN
             // csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/technician.csv"));
 
             // while ((row = csvReader.readLine()) != null) {

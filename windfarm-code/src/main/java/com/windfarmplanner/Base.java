@@ -7,7 +7,7 @@ import org.optaplanner.core.api.domain.variable.PlanningVariableGraphType;
 //import com.thoughtworks.xstream.annotations.XStreamInclude;
 
 @XStreamAlias("WfBase")
-public class Base extends AbstractPersistable implements Standstill{
+public class Base extends AbstractPersistable {
 
     protected Location location;
     protected Standstill previousStandstill;
@@ -41,22 +41,16 @@ public class Base extends AbstractPersistable implements Standstill{
         this.previousStandstill = previousStandstill;
     }
 
-    @Override
-    public Turbine getNextTurbine() {
-        return nextTurbine;
-    }
+    // @Override
+    // public Turbine getNextTurbine() { return nextTurbine; }
 
-    @Override
-    public void setNextTurbine(Turbine nextTurbine) {
-        this.nextTurbine = nextTurbine;
-    }
+    // @Override
+    // public void setNextTurbine(Turbine nextTurbine) { this.nextTurbine = nextTurbine; }
 
-    @Override
-    public Location getLocation() {
-        return location;
-    }
 
-    @Override
+    public Location getLocation() { return location; }
+
+    
     @AnchorShadowVariable(sourceVariableName = "previousStandstill")
     public Vessel getVessel() {
         return vessel;

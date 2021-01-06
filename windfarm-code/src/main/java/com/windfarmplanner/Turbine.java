@@ -1,13 +1,15 @@
 package com.windfarmplanner;
 
 import com.windfarmplanner.location.Location;
+import com.windfarmplanner.solver.TurbineDifficultyComparator;
+
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.variable.AnchorShadowVariable;
 import org.optaplanner.core.api.domain.variable.PlanningVariable;
 import org.optaplanner.core.api.domain.variable.PlanningVariableGraphType;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 
-@PlanningEntity
+@PlanningEntity(difficultyComparatorClass = TurbineDifficultyComparator.class)
 public class Turbine extends AbstractPersistable implements Standstill {
 
     protected Location location;

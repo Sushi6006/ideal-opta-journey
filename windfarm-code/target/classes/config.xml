@@ -32,7 +32,7 @@
             <!-- TODO use nearby selection to scale out -->
         </unionMoveSelector>
         <acceptor>
-            <lateAcceptanceSize>200</lateAcceptanceSize>
+            <lateAcceptanceSize>400</lateAcceptanceSize>
         </acceptor>
         <forager>
             <acceptedCountLimit>1</acceptedCountLimit>
@@ -41,8 +41,8 @@
 
     <!-- Optimization algorithms configuration -->
     <termination>
-        <!-- <secondsSpentLimit>300</secondsSpentLimit> -->
-        <millisecondsSpentLimit>50</millisecondsSpentLimit>
+        <!-- <secondsSpentLimit>1</secondsSpentLimit> -->
+        <millisecondsSpentLimit>100</millisecondsSpentLimit>
     </termination>
 
 </solver>
