@@ -1,7 +1,7 @@
 package com.windfarmplanner;
 
 // import com.sun.org.apache.xpath.internal.operations.Bool;
-import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
+// import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
 import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
 import org.optaplanner.core.impl.score.director.easy.EasyScoreCalculator;
 import org.slf4j.Logger;
@@ -23,7 +23,7 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
         // boolean timeWindowed = route instanceof TimeWindowedVesselRoutingSolution;
         // private Bool timeWindowed = false;
 
-        boolean hasTechnician = false;
+        // boolean hasTechnician = false;
 
         List<Turbine> turbineList = route.getTurbineList();
         List<Vessel> vesselList = route.getVesselList();
@@ -37,9 +37,10 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
         long softScore = 0L;
 
         // calculation
-//        for (int i = 0; i < turbineList.size(); i++) {
+        // for (int i = 0; i < turbineList.size(); i++) {
+            // Turbine turbine = turbineList.get(i);
         for (Turbine turbine : turbineList) {
-//            Turbine turbine = turbineList.get(i);
+            
             Standstill previousStandstill = turbine.getPreviousStandstill();
             if (previousStandstill != null) {  // i != 0
                 Vessel vessel = turbine.getVessel();

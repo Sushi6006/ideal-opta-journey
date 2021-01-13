@@ -6,22 +6,23 @@ According to the official OptaPlanner:
 
 We came out with our foundational class diagram:
 ![](docs/img/class-diagram.png)
-
+*Note:* this is to be changed according to:<br/>
+???
+<br/>
+<br/>
 
 ## Files and Directories
-- [`opta-new`](opta-new/) -> newest project created from `pom.xml`
-- [`optaplanner`](optaplanner/) -> created in examples
-- [`source`](source/) -> original Java files
-- [`windfarm-cxd`](windfarm-cxd/) -> original Java files without error
+- [`docs`](docs/) -> all of our docs with timestamps
+- [`legacy`](legacy/) -> legacy files, mostly codes
+- [`windfarm-code`](windfarm-code/) -> Working code
 
+<br/>
+<br/>
 
-## Input
-TURBINE = `0`
-VESSEL = `1`
-BASE = `2`
-TECHNICIAN = `3`
+## OptaPlanner
+[官方文档](https://docs.optaplanner.org/7.7.0.Final/optaplanner-docs/html_single/) <br/>
+不是很有阅读的必要, 更多可以作为一个查资料的地方。
 
-00 01 02 010 011 
-10 
-20
-30
+简单来说, 我们指定变量, 指定求解内容, 告诉Opta什么事情是减分项, 什么规则不能破坏(hard), 什么规则要尽量不破坏(soft), 然后opta会根据我们描述的情况求解。
+
+具体内容请参照[docs](docs/), 并根据时间顺序查看文档
