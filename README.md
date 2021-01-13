@@ -6,6 +6,7 @@ According to the official OptaPlanner:
 
 We came out with our foundational class diagram:
 ![](docs/img/class-diagram.png)
+
 *Note:* this is to be changed according to:<br/>
 ???
 <br/>
