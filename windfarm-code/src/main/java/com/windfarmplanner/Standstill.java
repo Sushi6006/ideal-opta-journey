@@ -15,14 +15,14 @@ public interface Standstill {
     /**
      * @return sometimes null
      */
-    Vessel getVessel();
+    Vehicle getVessel();
 
     /**
      * @return sometimes null
      */
     @InverseRelationShadowVariable(sourceVariableName = "previousStandstill")
-    Turbine getNextTurbine();
+    Task getNextTurbine();
 
-    void setNextTurbine(Turbine nextTurbine);
+    void setNextTurbine(Task nextTask);
 
 }

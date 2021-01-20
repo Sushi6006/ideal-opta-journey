@@ -13,8 +13,8 @@ public class Base extends AbstractPersistable {
     protected Standstill previousStandstill;
 
     // Shadow variables
-    protected Turbine nextTurbine;
-    protected Vessel vessel;
+    protected Task nextTask;
+    protected Vehicle vehicle;
 
     public Base() {
     }
@@ -52,12 +52,12 @@ public class Base extends AbstractPersistable {
 
     
     @AnchorShadowVariable(sourceVariableName = "previousStandstill")
-    public Vessel getVessel() {
-        return vessel;
+    public Vehicle getVessel() {
+        return vehicle;
     }
 
-    public void setVessel(Vessel vessel) {
-        this.vessel = vessel;
+    public void setVessel(Vehicle vehicle) {
+        this.vehicle = vehicle;
     }
 
     public void setLocation(Location location) {

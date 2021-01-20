@@ -34,8 +34,8 @@ public class App {
 
     private List<Base> baseList;
     protected List<HubSegmentLocation> hubLocationList = null;
-    protected List<Vessel> vesselList;
-    protected List<Turbine> turbineList;
+    protected List<Vehicle> vehicleList;
+    protected List<Task> taskList;
     protected List<HubSegmentLocation> locationList;
     // protected List<Technician> technicianList;
 
@@ -93,8 +93,8 @@ public class App {
             // technicianMap = new LinkedHashMap<>(technicianListSize);
 
             baseList = new ArrayList<>(baseListSize);
-            vesselList = new ArrayList<>(vesselListSize);
-            turbineList = new ArrayList<>(turbineListSize);
+            vehicleList = new ArrayList<>(vesselListSize);
+            taskList = new ArrayList<>(turbineListSize);
 
             // location
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/location.csv"));
@@ -152,12 +152,12 @@ public class App {
                 // if (base != null) {
                 //     vessel.setBase(base);
                 // }
-                Vessel vessel = new Vessel(id, Integer.parseInt(data[1]), base);
+                Vehicle vehicle = new Vehicle(id, Integer.parseInt(data[1]), base);
 
-                this.vesselList.add(vessel);
+                this.vehicleList.add(vehicle);
             }
             csvReader.close();
-            solution.setVesselList(this.vesselList);
+            solution.setVesselList(this.vehicleList);
 
 
             // turbines
@@ -166,15 +166,15 @@ public class App {
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
 
-                Turbine turbine = new Turbine();
+                Task task = new Task();
                 Long id = Long.parseLong(data[0]);
-                turbine.setId(id);
+                task.setId(id);
                 Location location = locationMap.get(id);
-                turbine.setLocation(location);
+                task.setLocation(location);
                 turbineLocationList.add(location);
-                turbine.setDemand(Integer.parseInt(data[1]));
+                task.setDemand(Integer.parseInt(data[1]));
                 // turbine.setTechnicianList(data[3]);
-                turbineList.add(turbine);
+                taskList.add(task);
             }
 
             // MANUALLY INITIALISING SOLUTIONS FOR LS
@@ -189,9 +189,9 @@ public class App {
             // }
 
             csvReader.close();
-            solution.setTurbineList(this.turbineList);
+            solution.setTurbineList(this.taskList);
             solution.setBaseList(baseList);
-            System.out.println("pre:"+this.turbineList.get(1).getPreviousStandstill());
+            System.out.println("pre:"+this.taskList.get(1).getPreviousStandstill());
 
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/distancemap.csv"));
 

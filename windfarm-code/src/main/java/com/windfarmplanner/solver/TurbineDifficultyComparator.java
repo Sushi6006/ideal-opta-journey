@@ -1,18 +1,19 @@
 package com.windfarmplanner.solver;
 
 import java.util.Comparator;
-import com.windfarmplanner.Turbine;
 
-public class TurbineDifficultyComparator implements Comparator<Turbine> {
+import com.windfarmplanner.Task;
 
-    private static final Comparator<Turbine> COMPARATOR = Comparator
-        .comparingDouble((Turbine turbine) -> turbine.getLocation().getLatitude())
+public class TurbineDifficultyComparator implements Comparator<Task> {
+
+    private static final Comparator<Task> COMPARATOR = Comparator
+        .comparingDouble((Task task) -> task.getLocation().getLatitude())
         .thenComparingDouble(turbine -> turbine.getLocation().getLongitude())
-        .thenComparingInt(Turbine::getDemand)
-        .thenComparingLong(Turbine::getId);
+        .thenComparingInt(Task::getDemand)
+        .thenComparingLong(Task::getId);
     
         @Override
-        public int compare(Turbine a, Turbine b) {
+        public int compare(Task a, Task b) {
             return COMPARATOR.compare(a, b);
         }
     

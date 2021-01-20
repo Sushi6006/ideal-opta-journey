@@ -10,7 +10,7 @@ import org.optaplanner.core.api.domain.variable.PlanningVariableGraphType;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 
 @PlanningEntity(difficultyComparatorClass = TurbineDifficultyComparator.class)
-public class Turbine extends AbstractPersistable implements Standstill {
+public class Task extends AbstractPersistable implements Standstill {
 
     protected Location location;
     protected int demand;
@@ -19,14 +19,14 @@ public class Turbine extends AbstractPersistable implements Standstill {
     protected Standstill previousStandstill;
 
     // Shadow variables
-    protected Turbine nextTurbine;
-    protected Vessel vessel;
+    protected Task nextTask;
+    protected Vehicle vehicle;
 //    protected List<Technician> technicianList;
 
-    public Turbine() {
+    public Task() {
     }
 
-    public Turbine(long id, Location location, int demand) {
+    public Task(long id, Location location, int demand) {
         super(id);
         this.location = location;
         this.demand = demand;
@@ -71,23 +71,23 @@ public class Turbine extends AbstractPersistable implements Standstill {
     }
 
     @Override
-    public Turbine getNextTurbine() {
-        return nextTurbine;
+    public Task getNextTurbine() {
+        return nextTask;
     }
 
     @Override
-    public void setNextTurbine(Turbine nextTurbine) {
-        this.nextTurbine = nextTurbine;
+    public void setNextTurbine(Task nextTask) {
+        this.nextTask = nextTask;
     }
 
     @Override
     @AnchorShadowVariable(sourceVariableName = "previousStandstill")
-    public Vessel getVessel() {
-        return vessel;
+    public Vehicle getVessel() {
+        return vehicle;
     }
 
-    public void setVessel(Vessel vessel) {
-        this.vessel = vessel;
+    public void setVessel(Vehicle vehicle) {
+        this.vehicle = vehicle;
     }
 
     // ************************************************************************

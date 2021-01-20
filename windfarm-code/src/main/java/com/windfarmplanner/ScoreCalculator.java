@@ -25,12 +25,12 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
 
         // boolean hasTechnician = false;
 
-        List<Turbine> turbineList = route.getTurbineList();
-        List<Vessel> vesselList = route.getVesselList();
+        List<Task> taskList = route.getTurbineList();
+        List<Vehicle> vehicleList = route.getVesselList();
 
-        Map<Vessel, Integer> vesselDemandMap = new HashMap<>(vesselList.size());
-        for (Vessel vessel : vesselList) {
-            vesselDemandMap.put(vessel, 0);
+        Map<Vehicle, Integer> vesselDemandMap = new HashMap<>(vehicleList.size());
+        for (Vehicle vehicle : vehicleList) {
+            vesselDemandMap.put(vehicle, 0);
         }
 
         long hardScore = 0L;
@@ -39,23 +39,23 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
         // calculation
         // for (int i = 0; i < turbineList.size(); i++) {
             // Turbine turbine = turbineList.get(i);
-        for (Turbine turbine : turbineList) {
+        for (Task task : taskList) {
             
-            Standstill previousStandstill = turbine.getPreviousStandstill();
+            Standstill previousStandstill = task.getPreviousStandstill();
             if (previousStandstill != null) {  // i != 0
-                Vessel vessel = turbine.getVessel();
+                Vehicle vehicle = task.getVessel();
                 // List<Technician> turbineTechnicians = turbine.getTechnicianList();
                 // List<Technician> vesselTechnicians = vessel.getTechnicianList();
                 // logger.debug("{}", turbine.getDemand());
                 // logger.debug("{}", vesselDemandMap);
-                if (vessel != null) {
-                    vesselDemandMap.put(vessel, vesselDemandMap.get(vessel) + turbine.getDemand());
+                if (vehicle != null) {
+                    vesselDemandMap.put(vehicle, vesselDemandMap.get(vehicle) + task.getDemand());
                 }
                 // Score constraint distanceToPreviousStandstill
-                softScore -= turbine.getDistanceFromPreviousStandstill();
-                if (turbine.getNextTurbine() == null && turbine.getLocation() != null && vessel != null) {
+                softScore -= task.getDistanceFromPreviousStandstill();
+                if (task.getNextTurbine() == null && task.getLocation() != null && vehicle != null) {
                     // Score constraint distanceFromLastTurbineToDepot
-                    softScore -= turbine.getLocation().getDistanceTo(vessel.getLocation());
+                    softScore -= task.getLocation().getDistanceTo(vehicle.getLocation());
                 }
 
                 /**
@@ -85,7 +85,7 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
             }
         }
 
-        for (Map.Entry<Vessel, Integer> entry : vesselDemandMap.entrySet()) {
+        for (Map.Entry<Vehicle, Integer> entry : vesselDemandMap.entrySet()) {
             int capacity = entry.getKey().getCapacity();
             int demand = entry.getValue();
             if (demand > capacity) {

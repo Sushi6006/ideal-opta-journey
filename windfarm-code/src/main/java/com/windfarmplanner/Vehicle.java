@@ -6,18 +6,18 @@ import org.optaplanner.examples.common.domain.AbstractPersistable;
 
 
 @XStreamAlias("WfVessel")
-public class Vessel extends AbstractPersistable implements Standstill {
+public class Vehicle extends AbstractPersistable implements Standstill {
 
     protected int capacity;
     protected Base base;
 
-    protected Turbine nextTurbine;
+    protected Task nextTask;
     // protected List<Technician> technicianList;
 
-    public Vessel() {
+    public Vehicle() {
     }
 
-    public Vessel(Long id, int capacity, Base base) {
+    public Vehicle(Long id, int capacity, Base base) {
         super(id);
         this.capacity = capacity;
         this.base = base;
@@ -48,13 +48,13 @@ public class Vessel extends AbstractPersistable implements Standstill {
     // }
 
     @Override
-    public Turbine getNextTurbine() {
-        return nextTurbine;
+    public Task getNextTurbine() {
+        return nextTask;
     }
 
     @Override
-    public void setNextTurbine(Turbine nextTurbine) {
-        this.nextTurbine = nextTurbine;
+    public void setNextTurbine(Task nextTask) {
+        this.nextTask = nextTask;
     }
 
     // public List getTechnicianList() {
@@ -74,7 +74,7 @@ public class Vessel extends AbstractPersistable implements Standstill {
     // }
 
     @Override
-    public Vessel getVessel() {
+    public Vehicle getVessel() {
         return this;
     }
 

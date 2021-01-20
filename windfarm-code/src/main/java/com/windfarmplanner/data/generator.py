@@ -7,14 +7,14 @@ from random import randint
 class Generator:
 
     # code for each type
-    __TYPE_CODE  = {"turbine": 1,
-                  "vessel": 2,
+    __TYPE_CODE  = {"task": 1,
+                  "vehicle": 2,
                   "base": 3,
                   "technician": 4}
     
     # count of each type
-    __TYPE_COUNT = {"turbine": 8,
-                    "vessel": 5,
+    __TYPE_COUNT = {"task": 8,
+                    "vehicle": 5,
                     "base": 1,
                     "technician": 0,
                     "location": 9}
@@ -52,16 +52,16 @@ class Generator:
         # generate data
         data = []
         turbine_list = []
-        for i in range(self.__TYPE_COUNT["turbine"]):
-            turbine = f'{self.__TYPE_CODE["turbine"]}{i}'
-            turbine_list.append(turbine)
-            entry = [turbine,                            # turbine code
+        for i in range(self.__TYPE_COUNT["task"]):
+            task = f'{self.__TYPE_CODE["task"]}{i}'
+            turbine_list.append(task)
+            entry = [task,                            # task code
                      randint(1, 100),                    # demand ammount
                      random.choice(self.__DEMAND_TYPE)]  # demand type
             data.append(entry)
         
         # write to file
-        with open("turbine.csv", "w") as turbine_file:
+        with open("task.csv", "w") as turbine_file:
             writer = csv.writer(turbine_file)
             writer.writerows(data)
 
@@ -84,16 +84,16 @@ class Generator:
         # generate data
         data = []
         vessel_list = []
-        for i in range(self.__TYPE_COUNT["vessel"]):
-            vessel = f'{self.__TYPE_CODE["vessel"]}{i}'
-            vessel_list.append(vessel)
-            entry = [vessel,                    # vessel code
+        for i in range(self.__TYPE_COUNT["vehicle"]):
+            vehicle = f'{self.__TYPE_CODE["vehicle"]}{i}'
+            vessel_list.append(vehicle)
+            entry = [vehicle,                    # vehicle code
                      randint(1, 100),           # capacity
                      random.choice(base_list)]  # base
             data.append(entry)
         
         # write to file
-        with open("vessel.csv", "w") as vessel_file:
+        with open("vehicle.csv", "w") as vessel_file:
             writer = csv.writer(vessel_file)
             writer.writerows(data)
 

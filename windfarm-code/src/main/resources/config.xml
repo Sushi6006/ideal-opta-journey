@@ -4,7 +4,7 @@
 
     <!-- Domain model configuration -->
     <solutionClass>com.windfarmplanner.Route</solutionClass>
-    <entityClass>com.windfarmplanner.Turbine</entityClass>
+    <entityClass>com.windfarmplanner.Task</entityClass>
     <entityClass>com.windfarmplanner.Standstill</entityClass>
 
     <!-- Score configuration -->
