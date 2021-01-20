@@ -32,7 +32,7 @@ public class Base extends AbstractPersistable {
 //    this.id = id;
 //    }
 
-    @PlanningVariable(valueRangeProviderRefs = { "vesselRange", "turbineRange" }, graphType = PlanningVariableGraphType.CHAINED)
+    @PlanningVariable(valueRangeProviderRefs = { "vehicleRange", "taskRange" }, graphType = PlanningVariableGraphType.CHAINED)
     public Standstill getPreviousStandstill() {
         return previousStandstill;
     }
@@ -42,21 +42,21 @@ public class Base extends AbstractPersistable {
     }
 
     // @Override
-    // public Turbine getNextTurbine() { return nextTurbine; }
+    // public Task getNextTask() { return nextTask; }
 
     // @Override
-    // public void setNextTurbine(Turbine nextTurbine) { this.nextTurbine = nextTurbine; }
+    // public void setNextTask(Task nextTask) { this.nextTask = nextTask; }
 
 
     public Location getLocation() { return location; }
 
     
     @AnchorShadowVariable(sourceVariableName = "previousStandstill")
-    public Vehicle getVessel() {
+    public Vehicle getVehicle() {
         return vehicle;
     }
 
-    public void setVessel(Vehicle vehicle) {
+    public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
 

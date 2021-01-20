@@ -5,7 +5,7 @@ import com.windfarmplanner.location.Location;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 
 
-@XStreamAlias("WfVessel")
+@XStreamAlias("WfVehicle")
 public class Vehicle extends AbstractPersistable implements Standstill {
 
     protected int capacity;
@@ -48,12 +48,12 @@ public class Vehicle extends AbstractPersistable implements Standstill {
     // }
 
     @Override
-    public Task getNextTurbine() {
+    public Task getNextTask() {
         return nextTask;
     }
 
     @Override
-    public void setNextTurbine(Task nextTask) {
+    public void setNextTask(Task nextTask) {
         this.nextTask = nextTask;
     }
 
@@ -69,12 +69,12 @@ public class Vehicle extends AbstractPersistable implements Standstill {
     //     this.technicianList.remove(technician);
     // }    
 
-    // public Turbine getTurbineList() {
-    //     return nextTurbine;
+    // public Task getTaskList() {
+    //     return nextTask;
     // }
 
     @Override
-    public Vehicle getVessel() {
+    public Vehicle getVehicle() {
         return this;
     }
 

@@ -20,49 +20,49 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
     @Override
     public HardSoftLongScore calculateScore(Route route) {
 
-        // boolean timeWindowed = route instanceof TimeWindowedVesselRoutingSolution;
+        // boolean timeWindowed = route instanceof TimeWindowedVehicleRoutingSolution;
         // private Bool timeWindowed = false;
 
         // boolean hasTechnician = false;
 
-        List<Task> taskList = route.getTurbineList();
-        List<Vehicle> vehicleList = route.getVesselList();
+        List<Task> taskList = route.getTaskList();
+        List<Vehicle> vehicleList = route.getVehicleList();
 
-        Map<Vehicle, Integer> vesselDemandMap = new HashMap<>(vehicleList.size());
+        Map<Vehicle, Integer> vehicleDemandMap = new HashMap<>(vehicleList.size());
         for (Vehicle vehicle : vehicleList) {
-            vesselDemandMap.put(vehicle, 0);
+            vehicleDemandMap.put(vehicle, 0);
         }
 
         long hardScore = 0L;
         long softScore = 0L;
 
         // calculation
-        // for (int i = 0; i < turbineList.size(); i++) {
-            // Turbine turbine = turbineList.get(i);
+        // for (int i = 0; i < taskList.size(); i++) {
+            // Task task = taskList.get(i);
         for (Task task : taskList) {
             
             Standstill previousStandstill = task.getPreviousStandstill();
             if (previousStandstill != null) {  // i != 0
-                Vehicle vehicle = task.getVessel();
-                // List<Technician> turbineTechnicians = turbine.getTechnicianList();
-                // List<Technician> vesselTechnicians = vessel.getTechnicianList();
-                // logger.debug("{}", turbine.getDemand());
-                // logger.debug("{}", vesselDemandMap);
+                Vehicle vehicle = task.getVehicle();
+                // List<Technician> taskTechnicians = task.getTechnicianList();
+                // List<Technician> vehicleTechnicians = vehicle.getTechnicianList();
+                // logger.debug("{}", task.getDemand());
+                // logger.debug("{}", vehicleDemandMap);
                 if (vehicle != null) {
-                    vesselDemandMap.put(vehicle, vesselDemandMap.get(vehicle) + task.getDemand());
+                    vehicleDemandMap.put(vehicle, vehicleDemandMap.get(vehicle) + task.getDemand());
                 }
                 // Score constraint distanceToPreviousStandstill
                 softScore -= task.getDistanceFromPreviousStandstill();
-                if (task.getNextTurbine() == null && task.getLocation() != null && vehicle != null) {
-                    // Score constraint distanceFromLastTurbineToDepot
+                if (task.getNextTask() == null && task.getLocation() != null && vehicle != null) {
+                    // Score constraint distanceFromLastTaskToDepot
                     softScore -= task.getLocation().getDistanceTo(vehicle.getLocation());
                 }
 
                 /**
-                for (Technician technicianT : turbineTechnicians){
-                    for (Technician technicianV : vesselTechnicians){
+                for (Technician technicianT : taskTechnicians){
+                    for (Technician technicianV : vehicleTechnicians){
                         if (technicianT.getType().equals(technicianV.getType())) {
-                            vessel.removeTechnician(technicianV);
+                            vehicle.removeTechnician(technicianV);
                             hasTechnician = true;
                             break;
                         }
@@ -74,9 +74,9 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
                  **/
 
                 // if (timeWindowed) {
-                //     TimeWindowedTurbine timeWindowedTurbine = (TimeWindowedTurbine) turbine;
-                //     long dueTime = timeWindowedTurbine.getDueTime();
-                //     Long arrivalTime = timeWindowedTurbine.getArrivalTime();
+                //     TimeWindowedTask timeWindowedTask = (TimeWindowedTask) task;
+                //     long dueTime = timeWindowedTask.getDueTime();
+                //     Long arrivalTime = timeWindowedTask.getArrivalTime();
                 //     if (dueTime < arrivalTime) {
                 //         // Score constraint arrivalAfterDueTime
                 //         hardScore -= (arrivalTime - dueTime);
@@ -85,7 +85,7 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
             }
         }
 
-        for (Map.Entry<Vehicle, Integer> entry : vesselDemandMap.entrySet()) {
+        for (Map.Entry<Vehicle, Integer> entry : vehicleDemandMap.entrySet()) {
             int capacity = entry.getKey().getCapacity();
             int demand = entry.getValue();
             if (demand > capacity) {
@@ -95,12 +95,12 @@ public class ScoreCalculator implements EasyScoreCalculator<Route> {
         }
 
         logger.debug("hardscore ({});\n softscore ({});\n", hardScore, softScore);
-//        for (Vessel vessel : vesselList){
-//            logger.debug("({})", vessel.getTurbineList());
+//        for (Vehicle vehicle : vehicleList){
+//            logger.debug("({})", vehicle.getTaskList());
 //        }
 
 
-        // Score constraint arrivalAfterDueTimeAtDepot is a built-in hard constraint in VesselRoutingImporter
+        // Score constraint arrivalAfterDueTimeAtDepot is a built-in hard constraint in VehicleRoutingImporter
         return HardSoftLongScore.of(hardScore, softScore);
 
     }

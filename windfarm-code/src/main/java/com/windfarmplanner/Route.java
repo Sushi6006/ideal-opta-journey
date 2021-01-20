@@ -15,7 +15,7 @@ import org.optaplanner.persistence.xstream.api.score.buildin.hardsoft.HardSoftSc
 import java.util.List;
 
 @PlanningSolution
-@XStreamAlias("WfVesselRoutingSolution")
+@XStreamAlias("WfVehicleRoutingSolution")
 public class Route extends AbstractPersistable{
 
     protected String name;
@@ -34,9 +34,9 @@ public class Route extends AbstractPersistable{
 //    public Route() {
 //    }
 //
-//    public Route(List<Vessel> vesselList, List<Turbine> turbineList) {
-//        this.vesselList = vesselList;
-//        this.turbineList = turbineList;
+//    public Route(List<Vehicle> vehicleList, List<Task> taskList) {
+//        this.vehicleList = vehicleList;
+//        this.taskList = taskList;
 //    }
 
     @ProblemFactCollectionProperty
@@ -58,22 +58,22 @@ public class Route extends AbstractPersistable{
     }
 
     @PlanningEntityCollectionProperty
-    @ValueRangeProvider(id = "vesselRange")
-    public List<Vehicle> getVesselList() {
+    @ValueRangeProvider(id = "vehicleRange")
+    public List<Vehicle> getVehicleList() {
         return vehicleList;
     }
 
-    public void setVesselList(List<Vehicle> vehicleList) {
+    public void setVehicleList(List<Vehicle> vehicleList) {
         this.vehicleList = vehicleList;
     }
 
     @PlanningEntityCollectionProperty
-    @ValueRangeProvider(id = "turbineRange")
-    public List<Task> getTurbineList() {
+    @ValueRangeProvider(id = "taskRange")
+    public List<Task> getTaskList() {
         return taskList;
     }
 
-    public void setTurbineList(List<Task> taskList) {
+    public void setTaskList(List<Task> taskList) {
         this.taskList = taskList;
     }
 

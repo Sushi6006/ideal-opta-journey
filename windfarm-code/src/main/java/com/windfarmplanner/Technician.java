@@ -27,11 +27,11 @@ public class Technician extends AbstractPersistable {
 
     public void setType(String type) { this.type = type; }
 
-    public Vehicle getVessel() {
+    public Vehicle getVehicle() {
         return vehicle;
     }
 
-    public void setVessel(Vehicle vehicle) {
+    public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
 

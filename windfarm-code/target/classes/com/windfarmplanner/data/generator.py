@@ -31,10 +31,10 @@ class Generator:
 
     def generate_files(self):
         self.generate_sizes()
-        turbine_list = self.generate_turbines()
+        task_list = self.generate_tasks()
         base_list = self.generate_bases()
-        vessel_list = self.generate_vessels(base_list)
-        location_list = self.generate_locations(turbine_list, base_list)
+        vehicle_list = self.generate_vehicles(base_list)
+        location_list = self.generate_locations(task_list, base_list)
         self.generate_distance_map(location_list)
 
     def generate_sizes(self):
@@ -47,25 +47,25 @@ class Generator:
         with open("sizes.csv", "w") as size_file:
             size_file.write(content[:-1])
 
-    def generate_turbines(self) -> list:
+    def generate_tasks(self) -> list:
         
         # generate data
         data = []
-        turbine_list = []
+        task_list = []
         for i in range(self.__TYPE_COUNT["task"]):
             task = f'{self.__TYPE_CODE["task"]}{i}'
-            turbine_list.append(task)
+            task_list.append(task)
             entry = [task,                            # task code
                      randint(1, 100),                    # demand ammount
                      random.choice(self.__DEMAND_TYPE)]  # demand type
             data.append(entry)
         
         # write to file
-        with open("task.csv", "w") as turbine_file:
-            writer = csv.writer(turbine_file)
+        with open("task.csv", "w") as task_file:
+            writer = csv.writer(task_file)
             writer.writerows(data)
 
-        return turbine_list
+        return task_list
 
     def generate_bases(self) -> list:
         # generate data
@@ -79,33 +79,33 @@ class Generator:
         
         return base_list
 
-    def generate_vessels(self, base_list: list) -> list:
+    def generate_vehicles(self, base_list: list) -> list:
 
         # generate data
         data = []
-        vessel_list = []
+        vehicle_list = []
         for i in range(self.__TYPE_COUNT["vehicle"]):
             vehicle = f'{self.__TYPE_CODE["vehicle"]}{i}'
-            vessel_list.append(vehicle)
+            vehicle_list.append(vehicle)
             entry = [vehicle,                    # vehicle code
                      randint(1, 100),           # capacity
                      random.choice(base_list)]  # base
             data.append(entry)
         
         # write to file
-        with open("vehicle.csv", "w") as vessel_file:
-            writer = csv.writer(vessel_file)
+        with open("vehicle.csv", "w") as vehicle_file:
+            writer = csv.writer(vehicle_file)
             writer.writerows(data)
 
-        return vessel_list
+        return vehicle_list
 
-    def generate_locations(self, turbine_list: list, base_list: list) -> list:
+    def generate_locations(self, task_list: list, base_list: list) -> list:
 
         # generate data
         location_list = []  # list instead of dict to remain the order
                             # (location_code, (x, y))
         data = []
-        for location in turbine_list + base_list:
+        for location in task_list + base_list:
             coord = (randint(-100, 100), randint(-100, 100))
             location_list.append((location, coord))
             entry = [location, coord[0], coord[1]]

@@ -4,11 +4,11 @@ import java.util.Comparator;
 
 import com.windfarmplanner.Task;
 
-public class TurbineDifficultyComparator implements Comparator<Task> {
+public class TaskDifficultyComparator implements Comparator<Task> {
 
     private static final Comparator<Task> COMPARATOR = Comparator
         .comparingDouble((Task task) -> task.getLocation().getLatitude())
-        .thenComparingDouble(turbine -> turbine.getLocation().getLongitude())
+        .thenComparingDouble(task -> task.getLocation().getLongitude())
         .thenComparingInt(Task::getDemand)
         .thenComparingLong(Task::getId);
     

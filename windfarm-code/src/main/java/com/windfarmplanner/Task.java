@@ -1,7 +1,7 @@
 package com.windfarmplanner;
 
 import com.windfarmplanner.location.Location;
-import com.windfarmplanner.solver.TurbineDifficultyComparator;
+import com.windfarmplanner.solver.TaskDifficultyComparator;
 
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.variable.AnchorShadowVariable;
@@ -9,7 +9,7 @@ import org.optaplanner.core.api.domain.variable.PlanningVariable;
 import org.optaplanner.core.api.domain.variable.PlanningVariableGraphType;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 
-@PlanningEntity(difficultyComparatorClass = TurbineDifficultyComparator.class)
+@PlanningEntity(difficultyComparatorClass = TaskDifficultyComparator.class)
 public class Task extends AbstractPersistable implements Standstill {
 
     protected Location location;
@@ -61,7 +61,7 @@ public class Task extends AbstractPersistable implements Standstill {
 //
 //    public void setTechnicianList(Technician technician) {this.technicianList.add(technician);}
 
-    @PlanningVariable(valueRangeProviderRefs = { "vesselRange", "turbineRange" }, graphType = PlanningVariableGraphType.CHAINED)
+    @PlanningVariable(valueRangeProviderRefs = { "vehicleRange", "taskRange" }, graphType = PlanningVariableGraphType.CHAINED)
     public Standstill getPreviousStandstill() {
         return previousStandstill;
     }
@@ -71,22 +71,22 @@ public class Task extends AbstractPersistable implements Standstill {
     }
 
     @Override
-    public Task getNextTurbine() {
+    public Task getNextTask() {
         return nextTask;
     }
 
     @Override
-    public void setNextTurbine(Task nextTask) {
+    public void setNextTask(Task nextTask) {
         this.nextTask = nextTask;
     }
 
     @Override
     @AnchorShadowVariable(sourceVariableName = "previousStandstill")
-    public Vehicle getVessel() {
+    public Vehicle getVehicle() {
         return vehicle;
     }
 
-    public void setVessel(Vehicle vehicle) {
+    public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
 
