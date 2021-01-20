@@ -8,7 +8,7 @@ We came out with our foundational class diagram:
 ![](docs/img/class-diagram.png)
 
 *Note:* this is to be changed according to:<br/>
-[](files/abstraction.pdf)
+[东冬的抽象建模](files/abstraction.pdf)
 <br/>
 <br/>
 
