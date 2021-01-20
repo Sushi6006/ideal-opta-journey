@@ -13,8 +13,8 @@ public class Base extends AbstractPersistable {
     protected Standstill previousStandstill;
 
     // Shadow variables
-    protected Turbine nextTurbine;
-    protected Vessel vessel;
+    protected Task nextTask;
+    protected Vehicle vehicle;
 
     public Base() {
     }
@@ -32,7 +32,7 @@ public class Base extends AbstractPersistable {
 //    this.id = id;
 //    }
 
-    @PlanningVariable(valueRangeProviderRefs = { "vesselRange", "turbineRange" }, graphType = PlanningVariableGraphType.CHAINED)
+    @PlanningVariable(valueRangeProviderRefs = { "vehicleRange", "taskRange" }, graphType = PlanningVariableGraphType.CHAINED)
     public Standstill getPreviousStandstill() {
         return previousStandstill;
     }
@@ -42,22 +42,22 @@ public class Base extends AbstractPersistable {
     }
 
     // @Override
-    // public Turbine getNextTurbine() { return nextTurbine; }
+    // public Task getNextTask() { return nextTask; }
 
     // @Override
-    // public void setNextTurbine(Turbine nextTurbine) { this.nextTurbine = nextTurbine; }
+    // public void setNextTask(Task nextTask) { this.nextTask = nextTask; }
 
 
     public Location getLocation() { return location; }
 
     
     @AnchorShadowVariable(sourceVariableName = "previousStandstill")
-    public Vessel getVessel() {
-        return vessel;
+    public Vehicle getVehicle() {
+        return vehicle;
     }
 
-    public void setVessel(Vessel vessel) {
-        this.vessel = vessel;
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
     }
 
     public void setLocation(Location location) {

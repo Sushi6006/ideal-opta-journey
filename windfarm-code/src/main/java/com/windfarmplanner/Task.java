@@ -1,7 +1,7 @@
 package com.windfarmplanner;
 
 import com.windfarmplanner.location.Location;
-import com.windfarmplanner.solver.TurbineDifficultyComparator;
+import com.windfarmplanner.solver.TaskDifficultyComparator;
 
 import org.optaplanner.core.api.domain.entity.PlanningEntity;
 import org.optaplanner.core.api.domain.variable.AnchorShadowVariable;
@@ -9,8 +9,8 @@ import org.optaplanner.core.api.domain.variable.PlanningVariable;
 import org.optaplanner.core.api.domain.variable.PlanningVariableGraphType;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 
-@PlanningEntity(difficultyComparatorClass = TurbineDifficultyComparator.class)
-public class Turbine extends AbstractPersistable implements Standstill {
+@PlanningEntity(difficultyComparatorClass = TaskDifficultyComparator.class)
+public class Task extends AbstractPersistable implements Standstill {
 
     protected Location location;
     protected int demand;
@@ -19,14 +19,14 @@ public class Turbine extends AbstractPersistable implements Standstill {
     protected Standstill previousStandstill;
 
     // Shadow variables
-    protected Turbine nextTurbine;
-    protected Vessel vessel;
+    protected Task nextTask;
+    protected Vehicle vehicle;
 //    protected List<Technician> technicianList;
 
-    public Turbine() {
+    public Task() {
     }
 
-    public Turbine(long id, Location location, int demand) {
+    public Task(long id, Location location, int demand) {
         super(id);
         this.location = location;
         this.demand = demand;
@@ -61,7 +61,7 @@ public class Turbine extends AbstractPersistable implements Standstill {
 //
 //    public void setTechnicianList(Technician technician) {this.technicianList.add(technician);}
 
-    @PlanningVariable(valueRangeProviderRefs = { "vesselRange", "turbineRange" }, graphType = PlanningVariableGraphType.CHAINED)
+    @PlanningVariable(valueRangeProviderRefs = { "vehicleRange", "taskRange" }, graphType = PlanningVariableGraphType.CHAINED)
     public Standstill getPreviousStandstill() {
         return previousStandstill;
     }
@@ -71,23 +71,23 @@ public class Turbine extends AbstractPersistable implements Standstill {
     }
 
     @Override
-    public Turbine getNextTurbine() {
-        return nextTurbine;
+    public Task getNextTask() {
+        return nextTask;
     }
 
     @Override
-    public void setNextTurbine(Turbine nextTurbine) {
-        this.nextTurbine = nextTurbine;
+    public void setNextTask(Task nextTask) {
+        this.nextTask = nextTask;
     }
 
     @Override
     @AnchorShadowVariable(sourceVariableName = "previousStandstill")
-    public Vessel getVessel() {
-        return vessel;
+    public Vehicle getVehicle() {
+        return vehicle;
     }
 
-    public void setVessel(Vessel vessel) {
-        this.vessel = vessel;
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
     }
 
     // ************************************************************************

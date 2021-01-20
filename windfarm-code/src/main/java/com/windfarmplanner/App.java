@@ -22,8 +22,8 @@ public class App {
 
     private final Route solution = new Route();
 
-    private int turbineListSize;
-    private int vesselListSize;
+    private int taskListSize;
+    private int vehicleListSize;
     private int hubListSize;
     // private int capacity;
     private int baseListSize;
@@ -34,8 +34,8 @@ public class App {
 
     private List<Base> baseList;
     protected List<HubSegmentLocation> hubLocationList = null;
-    protected List<Vessel> vesselList;
-    protected List<Turbine> turbineList;
+    protected List<Vehicle> vehicleList;
+    protected List<Task> taskList;
     protected List<HubSegmentLocation> locationList;
     // protected List<Technician> technicianList;
 
@@ -67,12 +67,12 @@ public class App {
             while ((row = csvReader.readLine()) != null) {
                 // System.out.println("sizes");
                 String[] data = row.split(",");
-                if (data[0].equals("turbine")) {
-                    turbineListSize = Integer.parseInt(data[1]);
-                    // System.out.println("turbine"+turbineListSize);
+                if (data[0].equals("task")) {
+                    taskListSize = Integer.parseInt(data[1]);
+                    // System.out.println("task"+taskListSize);
                 }
-                else if (data[0].equals("vessel")) {
-                    vesselListSize = Integer.parseInt(data[1]);
+                else if (data[0].equals("vehicle")) {
+                    vehicleListSize = Integer.parseInt(data[1]);
                 }
                 else if (data[0].equals("location")) {
                     hubListSize = Integer.parseInt(data[1]);
@@ -93,8 +93,8 @@ public class App {
             // technicianMap = new LinkedHashMap<>(technicianListSize);
 
             baseList = new ArrayList<>(baseListSize);
-            vesselList = new ArrayList<>(vesselListSize);
-            turbineList = new ArrayList<>(turbineListSize);
+            vehicleList = new ArrayList<>(vehicleListSize);
+            taskList = new ArrayList<>(taskListSize);
 
             // location
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/location.csv"));
@@ -105,7 +105,7 @@ public class App {
                 location.setLatitude(Double.parseDouble(data[1]));
                 location.setLongitude(Double.parseDouble(data[2]));
                 if (data[0].charAt(0) == '1'){
-                    location.setName("Turbine" + data[1]);
+                    location.setName("Task" + data[1]);
                 }
                 else if (data[0].charAt(0) == '3'){
                     location.setName("Base" + data[1]);
@@ -138,60 +138,60 @@ public class App {
             System.out.println("base:"+baseList);
 
 
-            // vessels
-            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/vessel.csv"));
+            // vehicles
+            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/vehicle.csv"));
 
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
 
-                // Vessel vessel = new Vessel();
+                // Vehicle vehicle = new Vehicle();
                 Long id = Long.parseLong(data[0]);
-                // vessel.setId(id);
-                // vessel.setCapacity(Integer.parseInt(data[1]));
+                // vehicle.setId(id);
+                // vehicle.setCapacity(Integer.parseInt(data[1]));
                 Base base = baseMap.get(id);
                 // if (base != null) {
-                //     vessel.setBase(base);
+                //     vehicle.setBase(base);
                 // }
-                Vessel vessel = new Vessel(id, Integer.parseInt(data[1]), base);
+                Vehicle vehicle = new Vehicle(id, Integer.parseInt(data[1]), base);
 
-                this.vesselList.add(vessel);
+                this.vehicleList.add(vehicle);
             }
             csvReader.close();
-            solution.setVesselList(this.vesselList);
+            solution.setVehicleList(this.vehicleList);
 
 
-            // turbines
-            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/turbine.csv"));
-            List<Location> turbineLocationList = new ArrayList<>(turbineListSize);
+            // tasks
+            csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/task.csv"));
+            List<Location> taskLocationList = new ArrayList<>(taskListSize);
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
 
-                Turbine turbine = new Turbine();
+                Task task = new Task();
                 Long id = Long.parseLong(data[0]);
-                turbine.setId(id);
+                task.setId(id);
                 Location location = locationMap.get(id);
-                turbine.setLocation(location);
-                turbineLocationList.add(location);
-                turbine.setDemand(Integer.parseInt(data[1]));
-                // turbine.setTechnicianList(data[3]);
-                turbineList.add(turbine);
+                task.setLocation(location);
+                taskLocationList.add(location);
+                task.setDemand(Integer.parseInt(data[1]));
+                // task.setTechnicianList(data[3]);
+                taskList.add(task);
             }
 
             // MANUALLY INITIALISING SOLUTIONS FOR LS
             // for (int i = 0; i < baseList.size(); i++){
-            //     baseList.get(i).setNextTurbine(turbineList.get(i));
+            //     baseList.get(i).setNextTask(taskList.get(i));
             //     Standstill pre = baseList.get(i);
-            //     turbineList.get(i).setPreviousStandstill(pre);
+            //     taskList.get(i).setPreviousStandstill(pre);
             // }
-            // for (int i = baseList.size() ; i < turbineList.size(); i++){
-            //     turbineList.get(i).setPreviousStandstill(turbineList.get(i-1));
-            //     turbineList.get(i-1).setNextTurbine(turbineList.get(i));
+            // for (int i = baseList.size() ; i < taskList.size(); i++){
+            //     taskList.get(i).setPreviousStandstill(taskList.get(i-1));
+            //     taskList.get(i-1).setNextTask(taskList.get(i));
             // }
 
             csvReader.close();
-            solution.setTurbineList(this.turbineList);
+            solution.setTaskList(this.taskList);
             solution.setBaseList(baseList);
-            System.out.println("pre:"+this.turbineList.get(1).getPreviousStandstill());
+            System.out.println("pre:"+this.taskList.get(1).getPreviousStandstill());
 
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/distancemap.csv"));
 
@@ -199,9 +199,9 @@ public class App {
                 // System.out.println(hubListSize);
                 String[] data = row.split(",");
                 for (int i = 0; i < hubListSize; i++) {
-                    // Distance roadLocation = (Distance) turbineLocationList.get(i);
+                    // Distance roadLocation = (Distance) taskLocationList.get(i);
                     HubSegmentLocation hubSegmentLocation = locationList.get(i);
-                    // Map<Distance, Double> travelDistanceMap = new LinkedHashMap<>(turbineListSize);
+                    // Map<Distance, Double> travelDistanceMap = new LinkedHashMap<>(taskListSize);
                     Map<HubSegmentLocation, Double> hubTravelDistanceMap = new LinkedHashMap<>(hubListSize);
                     for (int j = 0; j < hubListSize; j++) {
                         double travelDistance = Double.parseDouble(data[j]);
@@ -211,7 +211,7 @@ public class App {
                         //         throw new IllegalStateException("The travelDistance (" + travelDistance + ") should be zero.");
                         //     }
                         // } else {
-                        //     Distance otherLocation = (Distance) turbineLocationList.get(j);
+                        //     Distance otherLocation = (Distance) taskLocationList.get(j);
                         //     travelDistanceMap.put(otherLocation, travelDistance);
                         HubSegmentLocation otherHubLocation = hubLocationList.get(j);
                         hubTravelDistanceMap.put(otherHubLocation, travelDistance);
@@ -267,7 +267,7 @@ public class App {
 
 
     // private Route createRoute() {
-    //     return new Route(this.vesselList, this.turbineList);
+    //     return new Route(this.vehicleList, this.taskList);
     // }
 
 }

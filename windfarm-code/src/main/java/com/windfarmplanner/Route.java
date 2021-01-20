@@ -8,7 +8,6 @@ import org.optaplanner.core.api.domain.solution.PlanningSolution;
 import org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty;
 import org.optaplanner.core.api.domain.solution.ProblemFactCollectionProperty;
 import org.optaplanner.core.api.domain.valuerange.ValueRangeProvider;
-import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScore;
 import org.optaplanner.core.api.score.buildin.hardsoftlong.HardSoftLongScore;
 import org.optaplanner.persistence.xstream.api.score.buildin.hardsoft.HardSoftScoreXStreamConverter;
 
@@ -16,14 +15,14 @@ import org.optaplanner.persistence.xstream.api.score.buildin.hardsoft.HardSoftSc
 import java.util.List;
 
 @PlanningSolution
-@XStreamAlias("WfVesselRoutingSolution")
+@XStreamAlias("WfVehicleRoutingSolution")
 public class Route extends AbstractPersistable{
 
     protected String name;
     // planning entity
-    protected List<Turbine> turbineList;
+    protected List<Task> taskList;
     // planning variable
-    protected List<Vessel> vesselList;
+    protected List<Vehicle> vehicleList;
     protected List<HubSegmentLocation> locationList;
     protected List<Base> baseList;
     // planning whatever
@@ -35,9 +34,9 @@ public class Route extends AbstractPersistable{
 //    public Route() {
 //    }
 //
-//    public Route(List<Vessel> vesselList, List<Turbine> turbineList) {
-//        this.vesselList = vesselList;
-//        this.turbineList = turbineList;
+//    public Route(List<Vehicle> vehicleList, List<Task> taskList) {
+//        this.vehicleList = vehicleList;
+//        this.taskList = taskList;
 //    }
 
     @ProblemFactCollectionProperty
@@ -59,23 +58,23 @@ public class Route extends AbstractPersistable{
     }
 
     @PlanningEntityCollectionProperty
-    @ValueRangeProvider(id = "vesselRange")
-    public List<Vessel> getVesselList() {
-        return vesselList;
+    @ValueRangeProvider(id = "vehicleRange")
+    public List<Vehicle> getVehicleList() {
+        return vehicleList;
     }
 
-    public void setVesselList(List<Vessel> vesselList) {
-        this.vesselList = vesselList;
+    public void setVehicleList(List<Vehicle> vehicleList) {
+        this.vehicleList = vehicleList;
     }
 
     @PlanningEntityCollectionProperty
-    @ValueRangeProvider(id = "turbineRange")
-    public List<Turbine> getTurbineList() {
-        return turbineList;
+    @ValueRangeProvider(id = "taskRange")
+    public List<Task> getTaskList() {
+        return taskList;
     }
 
-    public void setTurbineList(List<Turbine> turbineList) {
-        this.turbineList = turbineList;
+    public void setTaskList(List<Task> taskList) {
+        this.taskList = taskList;
     }
 
 
