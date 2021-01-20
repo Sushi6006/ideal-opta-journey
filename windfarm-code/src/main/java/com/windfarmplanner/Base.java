@@ -1,7 +1,11 @@
 package com.windfarmplanner;
-import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import com.windfarmplanner.location.Location;
-// import com.windfarmplanner.timewindowed.TimeWindowedBase;
+import com.windfarmplanner.timewindowed.TimeWindowedBase;
+
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamInclude;
+
 
 // import org.optaplanner.core.api.domain.variable.AnchorShadowVariable;
 // import org.optaplanner.core.api.domain.variable.PlanningVariable;
@@ -10,9 +14,9 @@ import com.windfarmplanner.location.Location;
 
 @XStreamAlias("WfBase")
 // INCLUDE ONLY IF TIMEWINDOWED
-// @XStreamInclude({
-//     TimeWindowedBase.class
-// })
+@XStreamInclude({
+    TimeWindowedBase.class
+})
 public class Base extends AbstractPersistable {
 
     protected Location location;

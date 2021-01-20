@@ -1,0 +1,8 @@
+- [x] Base.java
+- [x] Standstill.java
+- [ ] Vehicle.java
+- [ ] Task.java
+- [ ] TimeWindowedShit
+  - [ ] Base
+  - [ ] Task
+  - [ ] Vehicle

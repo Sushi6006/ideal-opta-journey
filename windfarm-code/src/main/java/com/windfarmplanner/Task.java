@@ -9,7 +9,13 @@ import org.optaplanner.core.api.domain.variable.PlanningVariable;
 import org.optaplanner.core.api.domain.variable.PlanningVariableGraphType;
 import org.optaplanner.examples.common.domain.AbstractPersistable;
 
+import com.thoughtworks.xstream.annotations.XStreamInclude;
+import com.windfarmplanner.timewindowed.TimeWindowedTask;
+
 @PlanningEntity(difficultyComparatorClass = TaskDifficultyComparator.class)
+@XStreamInclude({
+    TimeWindowedTask.class
+})
 public class Task extends AbstractPersistable implements Standstill {
 
     protected Location location;
