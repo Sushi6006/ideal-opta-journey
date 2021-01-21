@@ -2,12 +2,16 @@ package com.windfarmplanner;
 
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.*;
 import java.lang.Integer;
+// import java.awt.Component;
+// import java.util.function.BiConsumer;
+
 
 // import com.windfarmplanner.location.Distance;
 import org.optaplanner.core.api.solver.Solver;
@@ -46,9 +50,7 @@ public class App {
 
         // import data
         App app = new App();
-        System.out.println("read");
         app.read_data();
-        System.out.println("read end");
         app.solve();
     }
 
