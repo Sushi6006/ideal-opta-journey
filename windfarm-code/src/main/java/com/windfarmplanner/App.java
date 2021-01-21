@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
 
 public class App {
 
-    private final Route solution = new Route();
+    private final RoutingSolution solution = new RoutingSolution();
 
     private int taskListSize;
     private int vehicleListSize;
@@ -251,8 +251,8 @@ public class App {
         Logger logger = LoggerFactory.getLogger(getClass());
         // Build the Solver
         logger.info("Build solver");
-        SolverFactory<Route> solverFactory = SolverFactory.createFromXmlResource("config.xml");
-        Solver<Route> solver = solverFactory.buildSolver();
+        SolverFactory<RoutingSolution> solverFactory = SolverFactory.createFromXmlResource("config.xml");
+        Solver<RoutingSolution> solver = solverFactory.buildSolver();
 
         // Load a problem with given data
         // logger.info("Load problem with dataset");

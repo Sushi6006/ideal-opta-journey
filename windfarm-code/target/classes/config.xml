@@ -3,7 +3,7 @@
 <solver>
 
     <!-- Domain model configuration -->
-    <solutionClass>com.windfarmplanner.Route</solutionClass>
+    <solutionClass>com.windfarmplanner.RoutingSolution</solutionClass>
     <entityClass>com.windfarmplanner.Task</entityClass>
     <entityClass>com.windfarmplanner.Standstill</entityClass>
 

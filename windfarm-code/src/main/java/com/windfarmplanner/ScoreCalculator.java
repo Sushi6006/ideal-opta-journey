@@ -12,13 +12,13 @@ import java.util.List;
 import java.util.Map;
 
 
-public class ScoreCalculator implements EasyScoreCalculator<Route> {
+public class ScoreCalculator implements EasyScoreCalculator<RoutingSolution> {
 
     protected final transient Logger logger = LoggerFactory.getLogger(getClass());
     // protected Technician technician;
 
     @Override
-    public HardSoftLongScore calculateScore(Route route) {
+    public HardSoftLongScore calculateScore(RoutingSolution route) {
 
         // boolean timeWindowed = route instanceof TimeWindowedVehicleRoutingSolution;
         // private Bool timeWindowed = false;
