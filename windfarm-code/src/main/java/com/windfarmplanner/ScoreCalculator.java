@@ -11,6 +11,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.windfarmplanner.timewindowed.TimeWindowedRoutingSolution;
+import com.windfarmplanner.timewindowed.TimeWindowedTask;
+
 
 public class ScoreCalculator implements EasyScoreCalculator<RoutingSolution> {
 
@@ -20,10 +23,10 @@ public class ScoreCalculator implements EasyScoreCalculator<RoutingSolution> {
     @Override
     public HardSoftLongScore calculateScore(RoutingSolution route) {
 
-        // boolean timeWindowed = route instanceof TimeWindowedVehicleRoutingSolution;
-        // private Bool timeWindowed = false;
+        boolean timeWindowed = route instanceof TimeWindowedRoutingSolution;
 
         // boolean hasTechnician = false;
+        // boolean hasParts = false;
 
         List<Task> taskList = route.getTaskList();
         List<Vehicle> vehicleList = route.getVehicleList();
@@ -42,6 +45,7 @@ public class ScoreCalculator implements EasyScoreCalculator<RoutingSolution> {
         for (Task task : taskList) {
             
             Standstill previousStandstill = task.getPreviousStandstill();
+            
             if (previousStandstill != null) {  // i != 0
                 Vehicle vehicle = task.getVehicle();
                 // List<Technician> taskTechnicians = task.getTechnicianList();
@@ -58,30 +62,30 @@ public class ScoreCalculator implements EasyScoreCalculator<RoutingSolution> {
                     softScore -= task.getLocation().getDistanceTo(vehicle.getLocation());
                 }
 
-                /**
-                for (Technician technicianT : taskTechnicians){
-                    for (Technician technicianV : vehicleTechnicians){
-                        if (technicianT.getType().equals(technicianV.getType())) {
-                            vehicle.removeTechnician(technicianV);
-                            hasTechnician = true;
-                            break;
-                        }
-                    }
-                    if (hasTechnician == false){
-                        hardScore -= 10;
-                    }
-                }
-                 **/
-
-                // if (timeWindowed) {
-                //     TimeWindowedTask timeWindowedTask = (TimeWindowedTask) task;
-                //     long dueTime = timeWindowedTask.getDueTime();
-                //     Long arrivalTime = timeWindowedTask.getArrivalTime();
-                //     if (dueTime < arrivalTime) {
-                //         // Score constraint arrivalAfterDueTime
-                //         hardScore -= (arrivalTime - dueTime);
+                // FIXME: technicians
+                // for (Technician technicianT : taskTechnicians){
+                //     for (Technician technicianV : vehicleTechnicians){
+                //         if (technicianT.getType().equals(technicianV.getType())) {
+                //             vehicle.removeTechnician(technicianV);
+                //             hasTechnician = true;
+                //             break;
+                //         }
+                //     }
+                //     if (hasTechnician == false){
+                //         hardScore -= 10;
                 //     }
                 // }
+                
+
+                if (timeWindowed) {
+                    TimeWindowedTask timeWindowedTask = (TimeWindowedTask) task;
+                    long dueTime = timeWindowedTask.getDueTime();
+                    Long arrivalTime = timeWindowedTask.getArrivalTime();
+                    if (dueTime < arrivalTime) {
+                        // Score constraint arrivalAfterDueTime
+                        hardScore -= (arrivalTime - dueTime);
+                    }
+                }
             }
         }
 
