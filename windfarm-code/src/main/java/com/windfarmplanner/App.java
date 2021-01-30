@@ -24,7 +24,7 @@ import org.slf4j.LoggerFactory;
 
 public class App {
 
-    private final RoutingSolution solution = new RoutingSolution();
+    private final RoutingSolution problem = new RoutingSolution();
 
     private int taskListSize;
     private int vehicleListSize;
@@ -50,12 +50,12 @@ public class App {
 
         // import data
         App app = new App();
-        app.read_data();
+        app.readData();
         app.solve();
     }
 
 
-    public void read_data() {
+    public void readData() {
         // Logger logger = LoggerFactory.getLogger(getClass());
         String row;
         BufferedReader csvReader = null;
@@ -118,7 +118,7 @@ public class App {
             csvReader.close();
             locationList = new ArrayList<>(hubLocationList.size());
             locationList.addAll(hubLocationList);
-            solution.setLocationList(locationList);
+            problem.setLocationList(locationList);
 
 
             // base
@@ -127,9 +127,9 @@ public class App {
             while ((row = csvReader.readLine()) != null) {
                 String[] data = row.split(",");
                 Base base = new Base();
-                long base_id = Long.parseLong(data[0]);
-                base.setId(base_id);
-                Location location = locationMap.get(base_id);
+                long baseId = Long.parseLong(data[0]);
+                base.setId(baseId);
+                Location location = locationMap.get(baseId);
                 // System.out.println("location:" + location);
                 base.setLocation(location);
                 baseList.add(base);
@@ -159,7 +159,7 @@ public class App {
                 this.vehicleList.add(vehicle);
             }
             csvReader.close();
-            solution.setVehicleList(this.vehicleList);
+            problem.setVehicleList(this.vehicleList);
 
 
             // tasks
@@ -191,8 +191,8 @@ public class App {
             // }
 
             csvReader.close();
-            solution.setTaskList(this.taskList);
-            solution.setBaseList(baseList);
+            problem.setTaskList(this.taskList);
+            problem.setBaseList(baseList);
             System.out.println("pre:"+this.taskList.get(1).getPreviousStandstill());
 
             csvReader = new BufferedReader(new FileReader("src/main/java/com/windfarmplanner/data/distancemap.csv"));
@@ -263,8 +263,17 @@ public class App {
         // Solve the problem
         logger.info("Solving");
         // Route solvedRoute = solver.solve(solution);
-        solver.solve(solution);
+        RoutingSolution solution = solver.solve(problem);
         logger.info("Done.");
+
+        // FIXME: getRoute is not in App.java
+        for (Vehicle vehicle : solution.getVehicleList()) {
+            System.out.println(vehicle);
+        }
+        for (Task task : solution.getTaskList()) {
+            System.out.println(task);
+        }
+
     }
 
 
