@@ -5,9 +5,12 @@
 .settings
 .vscode
 
-windfarm-code/.idea
-windfarm-code/.settings
-windfarm-code/.vscode
+src/.idea
+src/.settings
+src/.vscode
+src/.project
+src/windfarm.iml
+src/OptaplannerTest.iml
 
 # makefiles
 windfarm-code/makefile
