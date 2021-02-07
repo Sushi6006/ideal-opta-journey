@@ -62,7 +62,6 @@ json does not support comments, but I wrote some becasue this is a README.
 ```
 
 #### OUTPUT
-时间，风机编号，turbine_deadline，相应坐标
 ```json
 {
     "scheduledCycle" : "5.0",
