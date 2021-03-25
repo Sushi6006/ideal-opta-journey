@@ -9,8 +9,9 @@ import com.windfarmplanner.timewindowed.TimeWindowedTask;
 import com.windfarmplanner.timewindowed.TimeWindowedBase;
 
 //import org.optaplanner.core.api.domain.variable.VariableListener;
-import org.optaplanner.core.api.score.director.ScoreDirector;
+//import org.optaplanner.core.api.score.director.ScoreDirector;
 import org.optaplanner.core.impl.domain.variable.listener.VariableListener;
+import org.optaplanner.core.impl.score.director.ScoreDirector;
 
 public class ArrivalTimeUpdatingVariableListener implements VariableListener<Task> {
 
