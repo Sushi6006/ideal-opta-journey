@@ -112,3 +112,87 @@ json does not support comments, but I wrote some becasue this is a README.
     ]
 };
 ```
+
+
+#### ALGORITHM OUTPUT
+```json
+{
+    "route": {
+        "initial": [
+            {
+                "vessel": 1.0,
+                "turbine": [0.0]
+            },
+            {
+                "vessel": 2.0,
+                "turbine": [6.0, 2.0, 5.0]
+            },
+            {
+                "vessel": 3.0,
+                "turbine": [0.0]
+            }
+        ],
+        "firstday": [
+            ...
+        ]
+    },
+
+    "cost": [117558.75]
+}
+
+{
+    "route": [
+        [
+            {
+                "vessel": 1.0,
+                "turbine": [0.0]
+            },
+            {
+                "vessel": 2.0,
+                "turbine": [6.0, 2.0, 5.0]
+            },
+            {
+                "vessel": 3.0,
+                "turbine": [0.0]
+            }
+        ],
+        [ ... ]
+    ],
+
+    "cost": [117558.75]
+}
+
+
+
+
+{
+    "route": {
+        "initial": [
+            {
+                "V1": {
+                    "turbine": "0.0",
+                },
+                "V2" : [
+                          {
+                                "number" : "1.0",
+                                           {
+                                             "turbine" : "6.0", 
+                                           }]
+                                "number" : "2.0",
+                                           {
+                                             "turbine" : "2.0", 
+                                           }]
+                           }]
+                                        {
+                                       "turbine" : "5.0",
+                                         }]
+                               "V3" : 
+                                        {
+                                       "turbine" : "0.0",
+                                         }]
+
+                     "firstday":[
+
+              "cost":{ [117558.75] }
+      }
+```
